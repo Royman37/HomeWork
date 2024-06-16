@@ -1,4 +1,4 @@
-package Lesson_1;
+package main;
 
 public class PracticalTask {
     /*
