@@ -45,5 +45,4 @@ public class Main {
         System.out.println("\n Task 14:");
         task.array(5,10);
         }
-
     }
