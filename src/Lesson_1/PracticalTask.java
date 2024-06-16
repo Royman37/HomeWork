@@ -183,6 +183,7 @@ public class PracticalTask {
             System.out.print(array[i] + " ");
         }
     }
+
 }
 
 
