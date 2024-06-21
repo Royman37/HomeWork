@@ -9,7 +9,7 @@
     </properties>
 
     <groupId>com.aston.platform</groupId>
-    <artifactId>HomeWork</artifactId>
+    <artifactId>Lesson_6</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <dependencies>
