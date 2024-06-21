@@ -2,7 +2,9 @@ package main;
 
 public class Main {
     public static void main(String[] args) {
-        Employee person = new Employee("Мурад", "Юрист", "12333murade@gmail.com", "+375 44 123 32 32", 28000, 28);
+        Employee person = new Employee("Tony", "Bullet in teeth",
+                "Businessman", "tonybullet@gmail.com", "+375441233232",
+                50000, 38); //Перенес из-за слишком большой длины(как и в др. классах).
         person.info();
     }
 }

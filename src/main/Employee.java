@@ -1,15 +1,23 @@
 package main;
 
+/*
+Создал класс с полями.
+ */
 public class Employee {
-    public String name;
-    public String position;
-    public String email;
-    public String phone;
-    public int salary;
-    public int age;
-
-    public Employee(String personName, String personPosition, String personEmail, String personPhone, int personSalary, int personAge) {
-        this.name = personName;
+    private String firstName;
+    private String lastName;
+    private String position;
+    private String email;
+    private String phone;
+    private int salary;
+    private int age;
+    /*
+    Конструктор, в котором поля приравниваются к аргументам из конструктора.
+     */
+    public Employee(String personFirstName, String personLastName, String personPosition,
+                    String personEmail, String personPhone, int personSalary, int personAge) {
+        this.firstName = personFirstName;
+        this.lastName = personLastName;
         this.position = personPosition;
         this.email = personEmail;
         this.phone = personPhone;
@@ -18,7 +26,13 @@ public class Employee {
     }
 
     public void info() {
-        System.out.println("Name: " + this.name + "Position: " + this.position + "Email: " + this.email + "Phone: " + this.phone + "Salary: " + this.salary + "Age: " + this.age);
+        System.out.println("FirstName: " + this.firstName
+                + "\nLastName: " + this.lastName
+                + "\nPosition: " + this.position
+                + "\nEmail: " + this.email
+                + "\nPhone: " + this.phone
+                + "\nSalary: " + this.salary
+                + "\nAge: " + this.age);
     }
 
 }
