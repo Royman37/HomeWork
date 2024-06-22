@@ -11,6 +11,7 @@ public class Employee {
     private String phone;
     private int salary;
     private int age;
+
     /*
     Конструктор, в котором поля приравниваются к аргументам из конструктора.
      */
@@ -24,6 +25,7 @@ public class Employee {
         this.salary = personSalary;
         this.age = personAge;
     }
+
     /*
     Решил через toString т.к. мы выводим обьект. И мы его с помощью метода преобразуем в строки.
      */
