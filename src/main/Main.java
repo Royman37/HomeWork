@@ -8,11 +8,11 @@ public class Main {
         Employee person = new Employee("Tony", "Bullet in teeth",
                 "Businessman", "tonybullet@gmail.com", "+375441233232",
                 50000, 38); //Перенес из-за слишком большой длины(как и в др. классах).
-         /*
+        /*
         Cоздал 2 экземпляра класса Attractions
          */
-        Park.Attractions attractions = new Park.Attractions("Carousel, Ferris wheel", "From 9:00 to 21:00",30.0);
-        Park.Attractions attractions1 = new Park.Attractions("Ferris wheel", "From 9:00 to 15:00",26.0);
+        Park.Attractions attractions = new Park.Attractions("Carousel, Ferris wheel", "From 9:00 to 21:00", 30.0);
+        Park.Attractions attractions1 = new Park.Attractions("Ferris wheel", "From 9:00 to 15:00", 26.0);
         System.out.println("\nTask1: ");
         System.out.println(person.toString());
 
