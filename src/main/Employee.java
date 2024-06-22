@@ -1,7 +1,7 @@
 package main;
 
 /*
-Создал класс с полями.
+Создал класс "Сотрудник" с полями.
  */
 public class Employee {
     private String firstName;
@@ -24,9 +24,11 @@ public class Employee {
         this.salary = personSalary;
         this.age = personAge;
     }
-
-    public void info() {
-        System.out.println("FirstName: " + this.firstName
+    /*
+    Решил через toString т.к. мы выводим обьект. И мы его с помощью метода преобразуем в строки.
+     */
+    public String toString() {
+        return ("FirstName: " + this.firstName
                 + "\nLastName: " + this.lastName
                 + "\nPosition: " + this.position
                 + "\nEmail: " + this.email
@@ -34,5 +36,4 @@ public class Employee {
                 + "\nSalary: " + this.salary
                 + "\nAge: " + this.age);
     }
-
 }
