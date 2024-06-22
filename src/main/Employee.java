@@ -27,7 +27,7 @@ public class Employee {
     }
 
     /*
-    Решил через toString т.к. мы выводим обьект. И мы его с помощью метода преобразуем в строки.
+    Решил через toString т.к. мы выводим обьект. И с помощью метода преобразуем в строки.
      */
     public String toString() {
         return ("FirstName: " + this.firstName
