@@ -2,12 +2,16 @@ package main.Animals;
 
 public abstract class AnimalClass implements Animal {
     private String name, animalSpecies;
+    private static int count; //счетчик подсчета всех животных
     private boolean satiety;
     private int maxRunDistance;
     private int minRunDistance;
     private int maxSweemDistance;
     private int minSweemDistance;
 
+    public AnimalClass() {
+        count++;
+    }
     @Override
     public void eat(int amount) {
 
@@ -18,7 +22,7 @@ public abstract class AnimalClass implements Animal {
         if(amount > maxRunDistance) {
             System.out.println(this.animalSpecies + " " + this.name + " " + "не вывозит такую дистанцию.");
         } else
-            System.out.println(this.animalSpecies + " " + this.name + " " + "пробежал:" + " " + amount + "метров");
+            System.out.println(this.animalSpecies + " " + this.name + " " + "пробежал:" + " " + amount + " метров");
     }
 
     @Override
@@ -26,25 +30,24 @@ public abstract class AnimalClass implements Animal {
         if(amount > maxSweemDistance) {
             System.out.println(this.animalSpecies + " " + this.name + " " + "утонул.");
         } else if (amount <= 0) {
-            System.out.println(this.animalSpecies + " " + this.name + " " + "Не умеет плавать");
+            System.out.println(this.animalSpecies + " " + this.name + " " + "не умеет плавать");
         } else {
-            System.out.println(this.animalSpecies + " " + this.name + " " + "проплыл:" + " " + amount + "метров");
+            System.out.println(this.animalSpecies + " " + this.name + " " + "проплыл:" + " " + amount + " метров");
         }
 
 
     }
 
     @Override
-    public void countAnimals() {
-        for(int i = 0; i< this.animalSpecies.length(); i++) {
-            System.out.println("Animal = " + i);
-
-        }
-    }
-
-    @Override
+    /*
+    На счёт Сытости(Satiety) у собак всегда будет false, т.к. миску оккупировали коты.
+     */
     public void info(){
         System.out.println("\nName: " + this.name + "\nSpecies: " + this.animalSpecies + "\nSatiety: " + satiety + "\n");
+    }
+
+    public static int getCount() {
+        return count;
     }
 
     public String getName() {
