@@ -3,18 +3,22 @@ package main.Animals;
 public abstract class AnimalClass implements Animal {
     private String name, animalSpecies;
     private static int count; //счетчик подсчета всех животных
-    private boolean satiety;
+    private int maxFood;
+    private int satiety;
     private int maxRunDistance;
-    private int minRunDistance;
     private int maxSweemDistance;
-    private int minSweemDistance;
+    private boolean full;
+
 
     public AnimalClass() {
         count++;
     }
+    /*
+    Метод контролирующий еду в миске
+     */
     @Override
-    public void eat(int amount) {
-
+    public void eat(BowlWithFood food) {
+        food.putAwayFood(satiety);
     }
 
     @Override
@@ -31,17 +35,13 @@ public abstract class AnimalClass implements Animal {
             System.out.println(this.animalSpecies + " " + this.name + " " + "утонул.");
         } else if (amount <= 0) {
             System.out.println(this.animalSpecies + " " + this.name + " " + "не умеет плавать");
-        } else {
-            System.out.println(this.animalSpecies + " " + this.name + " " + "проплыл:" + " " + amount + " метров");
-        }
 
-
+        } else System.out.println(this.animalSpecies + " " + this.name + " " + "проплыл:" + " " + amount + " метров");
     }
-
+        /*
+        На счёт Сытости(Satiety) у собак всегда будет false, т.к. миску оккупировали коты.
+         */
     @Override
-    /*
-    На счёт Сытости(Satiety) у собак всегда будет false, т.к. миску оккупировали коты.
-     */
     public void info(){
         System.out.println("\nName: " + this.name + "\nSpecies: " + this.animalSpecies + "\nSatiety: " + satiety + "\n");
     }
@@ -65,13 +65,6 @@ public abstract class AnimalClass implements Animal {
         this.animalSpecies = animalSpecies;
     }
 
-    public boolean getSatiety() {
-        return satiety;
-    }
-
-    public void setSatiety(String satiety) {
-        this.satiety = satiety.equals("Full");
-    }
     public int getMaxRunDistance() {
         return maxRunDistance;
     }
@@ -80,13 +73,22 @@ public abstract class AnimalClass implements Animal {
         this.maxRunDistance = maxRunDistance;
     }
 
-    public int getMinRunDistance() {
-        return minRunDistance;
+    public int getSatiety() {
+        return satiety;
     }
 
-    public void setMinRunDistance(int minRunDistance) {
-        this.minRunDistance = minRunDistance;
+    public void setSatiety(int satiety) {
+        this.satiety = satiety;
     }
+
+    public int getMaxFood() {
+        return maxFood;
+    }
+
+    public void setMaxFood(int maxFood) {
+        this.maxFood = maxFood;
+    }
+
     public int getMaxSweemDistance() {
         return maxSweemDistance;
     }
@@ -94,14 +96,10 @@ public abstract class AnimalClass implements Animal {
     public void setMaxSweemDistance(int maxSweemDistance) {
         this.maxSweemDistance = maxSweemDistance;
     }
-
-    public int getMinSweemDistance() {
-        return minSweemDistance;
+    public boolean getFull() {
+        return full;
     }
-
-    public void setMinSweemDistance(int minSweemDistance) {
-        this.minSweemDistance = minSweemDistance;
+    public void setFull(boolean fullness) {
+        this.full = fullness;
     }
-
-
 }
