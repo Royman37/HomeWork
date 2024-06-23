@@ -1,15 +1,15 @@
-package main.Animals.AnimalSpecies;
+package main.animals.animalSpecies;
 
-import main.Animals.AnimalClass;
+import main.animals.AnimalAbstractClass;
 
-public class Dog extends AnimalClass {
+public class Dog extends AnimalAbstractClass {
     private static int count; //счетчик подсчёта собак
 
-    public Dog(String name, String animalSpecies) {
+    public Dog(String name, String species, int age) {
         this.setName(name);
         this.setMaxRunDistance(500);
         this.setMaxSweemDistance(10);
-        this.setAnimalSpecies(animalSpecies);
+        this.setAge(age);
         count++;
     }
 
