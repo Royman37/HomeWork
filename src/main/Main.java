@@ -6,7 +6,9 @@ import main.animals.AnimalAbstractClass;
 import main.animals.animalSpecies.Cat;
 import main.animals.animalSpecies.Dog;
 import main.animals.bowl.BowlWithFood;
-import main.beometricFigures.Figures.Rectangle;
+import main.beometricFigures.figures.Circle;
+import main.beometricFigures.figures.Rectangle;
+import main.beometricFigures.figures.Triangle;
 
 public class Main {
     //класс сканер для ввода при добавлении нужного кол-ва еды.
@@ -16,8 +18,8 @@ public class Main {
         int action;
         /*
         Создаём массив котов. Я пытался сделать динамический массив в отдельном классе,перебором через for.
-        Он хорошо работал, но Main его не видел, когда пытался привязать к миске с едой. Не знаю, хорошо это или нет.
-        Просто было интересно реализовать так. Решение подсмотрел и немного изменил.
+        Но Main его не видел, когда пытался взаимодействовать с миской. :(
+        Хотя в остальном работал.
          */
         Cat[] cats = new Cat[3];
         cats[0] = new Cat("Tikky", "Cat", 10, false, 1);
@@ -30,7 +32,7 @@ public class Main {
         System.out.println("Task1: \n");
         /*
         Реализовал методы в AnimalAbstractClass.
-        Решил создать интерфейс c методами отвечающими за функционал.
+        Создал интерфейс c методами отвечающими за функционал.
          */
         dog.sweem(10); //способность плавать
         cat.run(150); //способность бегать
@@ -65,10 +67,11 @@ public class Main {
         bowl.info();
 
         System.out.println("\nTask2: ");
-        Rectangle rec = new Rectangle("Rectangle", "Green", "Blue");
+        Rectangle rec = new Rectangle("Rectangle", "Green", "Blue", 10, 5);
+        Triangle tri = new Triangle("Triangle", "Red", "Purple", 5, 5, 5);
+        Circle circ = new Circle("Circle", "Yellow", "Orange", 5);
         rec.info();
-        System.out.println("Area equals: " + rec.areaCalculator(11, 6));
-        System.out.println("The perimeter equals: " + rec.perimeterCalculator(100,100));
+        tri.info();
+        circ.info();
     }
-
 }
