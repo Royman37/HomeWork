@@ -1,19 +1,20 @@
-package main.beometricFigures.figures;
+package main.geometricFigures.figures;
 
-import main.beometricFigures.FigureInterface;
+import main.geometricFigures.FigureInterface;
 
-public class Rectangle implements FigureInterface {
-    private double width, height;
+public class Triangle implements FigureInterface {
+    private double num1, num2, num3;
     private String backgroundColor;
     private String borderColor;
     private String name;
 
-    public Rectangle(String name, String backgroundColor, String borderColor, double width, double height) {
+    public Triangle(String name, String backgroundColor, String borderColor, double num1, double num2, double num3) {
         this.name = name;
         this.backgroundColor = backgroundColor;
         this.borderColor = borderColor;
-        this.width = width;
-        this.height = height;
+        this.num1 = num1;
+        this.num2 = num2;
+        this.num3 = num3;
 
     }
 
@@ -43,12 +44,13 @@ public class Rectangle implements FigureInterface {
 
     @Override
     public double areaCalculator() {
-        return 2 * (width * height);
+        double area = perimeterCalculator() / 2.0;
+        return Math.sqrt(area * (area - num1) * (area - num2) * (area - num3));
     }
 
     @Override
     public double perimeterCalculator() {
-        return width * height;
+        return num1 + num2 + num3;
     }
 
     @Override

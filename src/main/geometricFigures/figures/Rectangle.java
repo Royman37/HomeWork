@@ -1,18 +1,19 @@
-package main.beometricFigures.figures;
+package main.geometricFigures.figures;
 
-import main.beometricFigures.FigureInterface;
+import main.geometricFigures.FigureInterface;
 
-public class Circle implements FigureInterface {
-    private double radius;
+public class Rectangle implements FigureInterface {
+    private double width, height;
     private String backgroundColor;
     private String borderColor;
     private String name;
 
-    public Circle(String name, String backgroundColor, String borderColor, double radius) {
+    public Rectangle(String name, String backgroundColor, String borderColor, double width, double height) {
         this.name = name;
         this.backgroundColor = backgroundColor;
         this.borderColor = borderColor;
-        this.radius = radius;
+        this.width = width;
+        this.height = height;
 
     }
 
@@ -42,12 +43,12 @@ public class Circle implements FigureInterface {
 
     @Override
     public double areaCalculator() {
-        return Math.PI * radius * radius;
+        return 2 * (width * height);
     }
 
     @Override
     public double perimeterCalculator() {
-        return 2.0 * Math.PI * radius;
+        return width * height;
     }
 
     @Override

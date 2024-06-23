@@ -6,9 +6,9 @@ import main.animals.AnimalAbstractClass;
 import main.animals.animalSpecies.Cat;
 import main.animals.animalSpecies.Dog;
 import main.animals.bowl.BowlWithFood;
-import main.beometricFigures.figures.Circle;
-import main.beometricFigures.figures.Rectangle;
-import main.beometricFigures.figures.Triangle;
+import main.geometricFigures.figures.Circle;
+import main.geometricFigures.figures.Rectangle;
+import main.geometricFigures.figures.Triangle;
 
 public class Main {
     //класс сканер для ввода при добавлении нужного кол-ва еды.

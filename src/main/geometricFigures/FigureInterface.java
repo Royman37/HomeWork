@@ -1,4 +1,4 @@
-package main.beometricFigures;
+package main.geometricFigures;
 
 public interface FigureInterface {
     double areaCalculator();

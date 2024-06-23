@@ -1,20 +1,18 @@
-package main.beometricFigures.figures;
+package main.geometricFigures.figures;
 
-import main.beometricFigures.FigureInterface;
+import main.geometricFigures.FigureInterface;
 
-public class Triangle implements FigureInterface {
-    private double num1, num2, num3;
+public class Circle implements FigureInterface {
+    private double radius;
     private String backgroundColor;
     private String borderColor;
     private String name;
 
-    public Triangle(String name, String backgroundColor, String borderColor, double num1, double num2, double num3) {
+    public Circle(String name, String backgroundColor, String borderColor, double radius) {
         this.name = name;
         this.backgroundColor = backgroundColor;
         this.borderColor = borderColor;
-        this.num1 = num1;
-        this.num2 = num2;
-        this.num3 = num3;
+        this.radius = radius;
 
     }
 
@@ -44,13 +42,12 @@ public class Triangle implements FigureInterface {
 
     @Override
     public double areaCalculator() {
-        double area = perimeterCalculator() / 2.0;
-        return Math.sqrt(area * (area - num1) * (area - num2) * (area - num3));
+        return Math.PI * radius * radius;
     }
 
     @Override
     public double perimeterCalculator() {
-        return num1 + num2 + num3;
+        return 2.0 * Math.PI * radius;
     }
 
     @Override
