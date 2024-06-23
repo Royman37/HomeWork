@@ -1,26 +1,17 @@
 package main.Animals;
 
+import main.Animals.Bowl.BowlWithFood;
+
 public abstract class AnimalClass implements Animal {
     private String name, animalSpecies;
     private static int count; //счетчик подсчета всех животных
-    private int maxFood;
-    private int satiety;
     private int maxRunDistance;
     private int maxSweemDistance;
-    private boolean full;
 
 
     public AnimalClass() {
         count++;
     }
-    /*
-    Метод контролирующий еду в миске
-     */
-    @Override
-    public void eat(BowlWithFood food) {
-        food.putAwayFood(satiety);
-    }
-
     @Override
     public void run(int amount) {
         if(amount > maxRunDistance) {
@@ -43,7 +34,7 @@ public abstract class AnimalClass implements Animal {
          */
     @Override
     public void info(){
-        System.out.println("\nName: " + this.name + "\nSpecies: " + this.animalSpecies + "\nSatiety: " + satiety + "\n");
+        System.out.println("\nName: " + this.name + "\nSpecies: " + this.animalSpecies + "\nSatiety: " + "\n");
     }
 
     public static int getCount() {
@@ -73,33 +64,11 @@ public abstract class AnimalClass implements Animal {
         this.maxRunDistance = maxRunDistance;
     }
 
-    public int getSatiety() {
-        return satiety;
-    }
-
-    public void setSatiety(int satiety) {
-        this.satiety = satiety;
-    }
-
-    public int getMaxFood() {
-        return maxFood;
-    }
-
-    public void setMaxFood(int maxFood) {
-        this.maxFood = maxFood;
-    }
-
     public int getMaxSweemDistance() {
         return maxSweemDistance;
     }
 
     public void setMaxSweemDistance(int maxSweemDistance) {
         this.maxSweemDistance = maxSweemDistance;
-    }
-    public boolean getFull() {
-        return full;
-    }
-    public void setFull(boolean fullness) {
-        this.full = fullness;
     }
 }
