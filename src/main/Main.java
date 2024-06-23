@@ -66,9 +66,9 @@ public class Main {
 
         System.out.println("\nTask2: ");
         Rectangle rec = new Rectangle("Rectangle", "Green", "Blue");
-        rec.areaCalculator(120, 20);
-        rec.perimeterCalculator(20, 120);
         rec.info();
+        System.out.println("Area equals: " + rec.areaCalculator(11, 6));
+        System.out.println("The perimeter equals: " + rec.perimeterCalculator(100,100));
     }
 
 }
