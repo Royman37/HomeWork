@@ -1,4 +1,5 @@
 package main.animals.animalSpecies;
+
 import main.animals.AnimalAbstractClass;
 import main.animals.bowl.BowlWithFood;
 

@@ -15,15 +15,17 @@ public class Main {
     public static void main(String[] args) {
         int action;
         /*
-        Создаём массив котов
+        Создаём массив котов. Я пытался сделать динамический массив в отдельном классе,перебором через for.
+        Он хорошо работал, но Main его не видел, когда пытался привязать к миске с едой. Не знаю, хорошо это или нет.
+        Просто было интересно реализовать так. Решение подсмотрел и немного изменил.
          */
         Cat[] cats = new Cat[3];
-        cats[0] = new Cat("Tikky", "Cat",10, false, 1);
-        cats[1] = new Cat("Barsik", "Cat",80, false, 6);
-        cats[2] = new Cat("Pups", "Cat",50, false, 4);
+        cats[0] = new Cat("Tikky", "Cat", 10, false, 1);
+        cats[1] = new Cat("Barsik", "Cat", 80, false, 6);
+        cats[2] = new Cat("Pups", "Cat", 50, false, 4);
 
-        Cat cat = new Cat("Miay", "Cat",20, false, 4);
-        Cat cat1 = new Cat("Miaricio","Cat", 50, false, 3);
+        Cat cat = new Cat("Miay", "Cat", 20, false, 4);
+        Cat cat1 = new Cat("Miaricio", "Cat", 50, false, 3);
         Dog dog = new Dog("Bullet", "Dog", 3);
         System.out.println("Task1: \n");
         /*
@@ -41,7 +43,7 @@ public class Main {
         За счёт поля count и геттера к нему в каждом классе.
         В абстрактный добавил конструктор для подсчёта, чтобы вызвать через него.
          */
-        System.out.println("Кол-во котов: " + cat.getCount());
+        System.out.println("\nКол-во котов: " + cat.getCount());
         System.out.println("Кол-во собак: " + dog.getCount());
         System.out.println("Кол-во всех животных: " + AnimalAbstractClass.getCount());
 
