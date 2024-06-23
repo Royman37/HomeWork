@@ -22,7 +22,4 @@ public class Cat extends AnimalAbstractClass {
     public static int getCount() {
         return count++;
     }
-    public void info(){
-        System.out.println("\nName: " + this.getName() + "\nSatiety: " + getSatiety() + "\nAge: " + getAge());
-    }
 }

@@ -9,6 +9,7 @@ import main.animals.bowl.BowlWithFood;
 import main.beometricFigures.Figures.Rectangle;
 
 public class Main {
+    //класс сканер для ввода при добавлении нужного кол-ва еды.
     public static Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
@@ -26,8 +27,8 @@ public class Main {
         Dog dog = new Dog("Bullet", "Dog", 3);
         System.out.println("Task1: \n");
         /*
-        Реализовал методы в Animal Class.
-        Решил всё-таки создать интерфейс, т.к. хватает методов отвечающих за функционал.
+        Реализовал методы в AnimalAbstractClass.
+        Решил создать интерфейс c методами отвечающими за функционал.
          */
         dog.sweem(10); //способность плавать
         cat.run(150); //способность бегать
@@ -35,7 +36,6 @@ public class Main {
         dog.info(); //информация об объекте
         cat.info();
         cat1.info();
-        System.out.println("\nИнформация по массиву котов: ");
         /*
         Реализовал счетчик котов, собак, всех животных.
         За счёт поля count и геттера к нему в каждом классе.
@@ -64,7 +64,6 @@ public class Main {
 
         System.out.println("\nTask2: ");
         Rectangle rec = new Rectangle("Rectangle", "Green", "Blue");
-
         rec.areaCalculator(120, 20);
         rec.perimeterCalculator(20, 120);
         rec.info();

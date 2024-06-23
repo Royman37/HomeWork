@@ -79,7 +79,7 @@ public abstract class AnimalAbstractClass implements AnimalInterface {
         } else System.out.println(this.name + " " + "проплыл:" + " " + amount + " метров");
     }
     /*
-    На счёт Сытости(Satiety) у собак всегда будет false, т.к. миску оккупировали коты.
+    На счёт Сытости(Satiety) у собак всегда будет 0, т.к. миску оккупировали коты.
      */
     @Override
     public void info(){
