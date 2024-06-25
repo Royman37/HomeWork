@@ -3,7 +3,7 @@ package main;
 public class StaticArray {
     private int parce;
     private int sum;
-    private String[][] array = new String[4][3];
+    private String[][] array = new String[4][4];
 
     public void initializationArray(String[][] array) throws MyArraySizeException {
         if (array.length != 4 || array[0].length != 4) {
