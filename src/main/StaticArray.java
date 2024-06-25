@@ -1,5 +1,7 @@
 package main;
 
+import main.exceptions.MyArraySizeException;
+
 public class StaticArray {
     private int parce;
     private int sum;

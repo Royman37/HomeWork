@@ -1,5 +1,7 @@
 package main;
 
+import main.exceptions.MyArraySizeException;
+
 public class Main {
     public static void main(String[] args) {
         StaticArray array = new StaticArray();

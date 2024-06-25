@@ -1,4 +1,4 @@
-package main;
+package main.exceptions;
 
 public class MyArraySizeException extends Exception {
     public MyArraySizeException(String message) {
