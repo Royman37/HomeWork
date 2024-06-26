@@ -8,15 +8,18 @@ public class MyArray {
     private int sum;
     private String[][] array = new String[4][4];
 
-    public void initializationArray(String[][] array) throws MyArraySizeException, MyArrayDataException {
+    /*
+    Заполнил массив с помощью цикла for, второй цикл перебирает и преобразовывает тип String в int
+     */
+    public void initialisationArray(String[][] array) throws MyArraySizeException, MyArrayDataException {
         if (array.length != 4 || array[0].length != 4) {
             throw new MyArraySizeException("Неверный размер массива!");
         }
         System.out.println("Task1: Массив типа String");
         for (int i = 0; i < array.length; i++) {
             System.out.println();
-            for (int j = 0; j < array[i].length; j++) {
-                   array[i][j] = "1";
+            for (int j = 0; j < array[i].length; j++) { //присвоил одно значение на весь массив
+                array[i][j] = "1";
                 System.out.print(array[i][j] + " ");
             }
         }
@@ -27,7 +30,7 @@ public class MyArray {
             for (int j = 0; j < array[i].length; j++) {
                 try {
                     parce = Integer.parseInt(array[i][j]);
-                }catch (NumberFormatException e) {
+                } catch (NumberFormatException e) {
                     throw new MyArrayDataException(i, j);
                 }
                 System.out.print(parce + " ");
