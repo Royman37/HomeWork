@@ -5,7 +5,7 @@ import main.exceptions.MyArraySizeException;
 
 public class Main {
     public static void main(String[] args) {
-        StaticArray array = new StaticArray();
+        MyArray array = new MyArray();
         try {
             try {
                 array.initializationArray(array.getArray());
@@ -14,7 +14,7 @@ public class Main {
             }
         }catch (MyArrayDataException e) {
             System.out.println("Неверный тип данных!");
-            System.out.println("Ячейка: " + e.i + "x" + e.j);
+            System.out.println("Ячейка: " + e.num1 + "x" + e.num2);
         }
     }
 }

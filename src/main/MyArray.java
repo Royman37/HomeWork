@@ -3,7 +3,7 @@ package main;
 import main.exceptions.MyArrayDataException;
 import main.exceptions.MyArraySizeException;
 
-public class StaticArray {
+public class MyArray {
     private int parce;
     private int sum;
     private String[][] array = new String[4][4];
@@ -16,11 +16,7 @@ public class StaticArray {
         for (int i = 0; i < array.length; i++) {
             System.out.println();
             for (int j = 0; j < array[i].length; j++) {
-
-               if(array[0][j] == array[i][0]) {
                    array[i][j] = "1";
-               }else array[i][j] = "0";
-
                 System.out.print(array[i][j] + " ");
             }
         }

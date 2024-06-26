@@ -1,9 +1,9 @@
 package main.exceptions;
 
 public class MyArrayDataException extends Exception {
-    public int i,j;
-    public MyArrayDataException(int i, int j) {
-        this.i = i;
-        this.j = j;
+    public int num1,num2;
+    public MyArrayDataException(int num1, int num2) {
+        this.num1 = num1;
+        this.num2 = num2;
     }
 }
