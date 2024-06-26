@@ -1,5 +1,6 @@
 package main;
 
+import main.exceptions.MyArrayDataException;
 import main.exceptions.MyArraySizeException;
 
 public class StaticArray {
@@ -7,7 +8,7 @@ public class StaticArray {
     private int sum;
     private String[][] array = new String[4][4];
 
-    public void initializationArray(String[][] array) throws MyArraySizeException {
+    public void initializationArray(String[][] array) throws MyArraySizeException, MyArrayDataException {
         if (array.length != 4 || array[0].length != 4) {
             throw new MyArraySizeException("Неверный размер массива!");
         }
@@ -15,7 +16,11 @@ public class StaticArray {
         for (int i = 0; i < array.length; i++) {
             System.out.println();
             for (int j = 0; j < array[i].length; j++) {
-                array[i][j] = "1";
+
+               if(array[0][j] == array[i][0]) {
+                   array[i][j] = "1";
+               }else array[i][j] = "0";
+
                 System.out.print(array[i][j] + " ");
             }
         }
@@ -24,7 +29,11 @@ public class StaticArray {
         for (int i = 0; i < array.length; i++) {
             System.out.println();
             for (int j = 0; j < array[i].length; j++) {
-                parce = Integer.parseInt(array[i][j]);
+                try {
+                    parce = Integer.parseInt(array[i][j]);
+                }catch (NumberFormatException e) {
+                    throw new MyArrayDataException(i, j);
+                }
                 System.out.print(parce + " ");
                 sum += parce;
             }
