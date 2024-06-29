@@ -18,8 +18,10 @@ public class MyArray {
         System.out.println("Task1: Массив типа String");
         for (int i = 0; i < array.length; i++) {
             System.out.println();
-            for (int j = 0; j < array[i].length; j++) { //присвоил одно значение на весь массив
-                array[i][j] = "1";
+            for (int j = 0; j < array[i].length; j++) { //присвоил 2 значения для наглядности работы исключения. (ячейка 0x0, 0x1)
+                if(array[0][j] == array[i][0]) {
+                    array[i][j] = "0";
+                } else array[i][j] = "1";
                 System.out.print(array[i][j] + " ");
             }
         }
