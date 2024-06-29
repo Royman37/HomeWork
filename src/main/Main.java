@@ -18,10 +18,6 @@ public class Main {
 
         System.out.println("\nTask2: ");
         group.joinGoup();
-        /*
-        С помощью сеттера можем изменить (вносим) данные о аттракционах.
-        Геттер для  вывода информации (возврата т.к. return)
-         */
         System.out.println("\nTask3: ");
         park.info();
         Park.Attraction attraction = new Park.Attraction("Carousel of Death", "From 6:00 to 20:00", 666);
