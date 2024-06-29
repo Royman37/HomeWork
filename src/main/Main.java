@@ -11,8 +11,8 @@ public class Main {
         /*
         Cоздал 2 экземпляра класса Attractions
          */
-        Park.Attractions attractions = new Park.Attractions("Carousel, Ferris wheel", "From 9:00 to 21:00", 30.0);
-        Park.Attractions attractions1 = new Park.Attractions("Ferris wheel", "From 9:00 to 15:00", 26.0);
+        Park park = new Park("Lalaland");
+        Park.
         System.out.println("\nTask1: ");
         System.out.println(person.toString());
 
@@ -23,16 +23,6 @@ public class Main {
         Геттер для  вывода информации (возврата т.к. return)
          */
         System.out.println("\nTask3: ");
-        attractions.setAttractions("Carousel");
-        attractions.setWorkingHours("9:00 to 19:00");
-        attractions.setCost(35.00);
-        System.out.println(attractions.getAttractions() + "\n");
-
-        attractions1.setAttractions("New name");
-        attractions1.setWorkingHours("9:00 to 21:00");
-        attractions1.setCost(20.00);
-        System.out.println(attractions1.getAttractions());
-        System.out.println(attractions1.getWorkingHours());
-        System.out.println(attractions1.getCost());
+        Park.Attracto
     }
 }
