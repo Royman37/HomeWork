@@ -4,53 +4,32 @@ import java.util.WeakHashMap;
 
 public class Park {
     private String name;
-    private Attraction[] attractions = {new Attraction("Lala", "From 9:00 to 20:00", 30)};
+    private Attraction attractions = new Attraction("Carousel", "From 9:00 to 20:00", 30);
 
     public Park(String name) {
         this.name = name;
     }
+    public void info() {
+        attractions.info();
+    }
 
     private class Attraction {
-
-        private String newattractions, workingHours;
+        private String nameAttractions, workingHours;
         private double cost;
 
         public Attraction(String pAttractions, String pWorkingHours, double pCost) {
-            this.newattractions = pAttractions;
+            this.nameAttractions = pAttractions;
             this.workingHours = pWorkingHours;
             this.cost = pCost;
         }
-
-        public String getAttractions() {
-            return newattractions;
-        }
-        public void setAttractions(String pAttractions) {
-            this.newattractions = pAttractions;
-        }
-
-        public String getWorkingHours() {
-            return workingHours;
-        }
-
-        public void setWorkingHours(String workingHours) {
-            this.workingHours = workingHours;
-        }
-
-        public double getCost() {
-            return cost;
+        public void addAttraction(String nameAttractions, String workingHours, double cost) {
+            Attraction attraction = new Attraction(nameAttractions, workingHours, cost);
 
         }
 
-        public void setCost(double pCost) {
-            this.cost = pCost;
-            System.out.println("Стоимость: " + this.cost + "\n");
+        public void info() {
+            System.out.println(attractions.nameAttractions + " " + workingHours + " " + cost);
         }
-        public void addAttraction() {
-            Attraction attraction = new Attraction(newattractions, workingHours, cost);
-            attractions.add(attraction);
+    }
 
-        }
-
-
-        }
 }

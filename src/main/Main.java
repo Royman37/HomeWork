@@ -12,7 +12,7 @@ public class Main {
         Cоздал 2 экземпляра класса Attractions
          */
         Park park = new Park("Lalaland");
-        Park.
+
         System.out.println("\nTask1: ");
         System.out.println(person.toString());
 
@@ -23,6 +23,6 @@ public class Main {
         Геттер для  вывода информации (возврата т.к. return)
          */
         System.out.println("\nTask3: ");
-        Park.Attracto
+        park.info();
     }
 }
