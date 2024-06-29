@@ -12,7 +12,6 @@ public class Main {
         Cоздал 2 экземпляра класса Attractions
          */
         Park park = new Park("Lalaland");
-        System.out.println("Welcome to the Park: " + park);
 
         System.out.println("\nTask1: ");
         System.out.println(person.toString());
@@ -30,7 +29,6 @@ public class Main {
         /*
         Можно добавить новый аттракцион через метод.
          */
-        attraction.addAttraction("Ferris wheel", "From 8:00 to 18:00", 55);
         attraction.info();
         attraction1.info();
     }

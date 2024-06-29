@@ -15,7 +15,7 @@ public class Park {
         attractions.info();
     }
 
-     static class Attraction {
+    static class Attraction {
         private String nameAttractions, workingHours;
         private double cost;
 
@@ -35,10 +35,6 @@ public class Park {
             this.nameAttractions = pAttractions;
             this.workingHours = pWorkingHours;
             this.cost = pCost;
-        }
-
-        public void addAttraction(String nameAttractions, String workingHours, double cost) {
-            Attraction attraction = new Attraction(nameAttractions, workingHours, cost);
         }
 
         public void info() {
