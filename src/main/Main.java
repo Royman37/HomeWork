@@ -26,9 +26,6 @@ public class Main {
         park.info();
         Park.Attraction attraction = new Park.Attraction("Carousel of Death", "From 6:00 to 20:00", 666);
         Park.Attraction attraction1 = new Park.Attraction("Romashka", "From 10:00 to 18:00", 45);
-        /*
-        Можно добавить новый аттракцион через метод.
-         */
         attraction.info();
         attraction1.info();
     }
