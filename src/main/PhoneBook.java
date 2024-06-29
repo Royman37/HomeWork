@@ -14,6 +14,7 @@ public class PhoneBook {
         System.out.println("Task2: \n");
         /*
         Т.к. HaskMap перезаписывает ячейку, если указать идентичный ключ.
+        Создал ArrayList состоящий из HashMap
          */
         List<Map<String, String>> values = new ArrayList<>();
         values.add(new HashMap<String, String>() {{
