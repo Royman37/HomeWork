@@ -19,10 +19,9 @@ public class Main {
         System.out.println("\nTask2: ");
         group.joinGoup();
         System.out.println("\nTask3: ");
+        park.newAttraction("Ferris wheel", "From 10:00 to 20:00", 60);
+        park.newAttraction("Сarousel of death", "From 6:06 to 20:00", 666);
         park.info();
-        Park.Attraction attraction = new Park.Attraction("Carousel of Death", "From 6:00 to 20:00", 666);
-        Park.Attraction attraction1 = new Park.Attraction("Romashka", "From 10:00 to 18:00", 45);
-        attraction.info();
-        attraction1.info();
+
     }
 }

@@ -4,32 +4,28 @@ import java.util.WeakHashMap;
 
 public class Park {
     private String name;
-    private static Attraction attractions = new Attraction("Carousel", "From 9:00 to 20:00", 30);
+    private Attraction attractions = new Attraction("Сarousel", "From 9:00 to 20:00", 50);
 
     public Park(String name) {
         this.name = name;
     }
 
+    public String getName() {
+        return name;
+    }
+
     public void info() {
-        System.out.println("!!!WELCOME TO PARK!!!: " + name);
         attractions.info();
     }
 
-    static class Attraction {
+    public void newAttraction(String name, String workingHours, double cost) {
+        Attraction newAttraction = new Attraction(name, workingHours, cost);
+        newAttraction.info();
+    }
+
+    private class Attraction {
         private String nameAttractions, workingHours;
         private double cost;
-
-        public String getNameAttractions() {
-            return nameAttractions;
-        }
-
-        public String getWorkingHours() {
-            return workingHours;
-        }
-
-        public double getCost() {
-            return cost;
-        }
 
         public Attraction(String pAttractions, String pWorkingHours, double pCost) {
             this.nameAttractions = pAttractions;
@@ -38,7 +34,8 @@ public class Park {
         }
 
         public void info() {
-            System.out.println("Attraction name: " + getNameAttractions() + "\nWorking Hours: " + getWorkingHours() + "\nCost: " + getCost() + "\n");
+            System.out.println("!!!WELCOME TO PARK!!!: " + getName() + "\nAttraction name: " + this.nameAttractions + "\nWorking Hours: " + this.workingHours + "\nCost: " + this.cost + "\n");
+
         }
     }
 }
