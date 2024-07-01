@@ -51,16 +51,8 @@ public abstract class AnimalAbstractClass implements AnimalInterface {
         this.name = name;
     }
 
-    public int getMaxRunDistance() {
-        return maxRunDistance;
-    }
-
     public void setMaxRunDistance(int maxRunDistance) {
         this.maxRunDistance = maxRunDistance;
-    }
-
-    public int getMaxSweemDistance() {
-        return maxSweemDistance;
     }
 
     public void setMaxSweemDistance(int maxSweemDistance) {
@@ -75,13 +67,9 @@ public abstract class AnimalAbstractClass implements AnimalInterface {
             System.out.println(this.name + " " + "пробежал:" + " " + amount + " метров");
     }
 
-    @Override
     public void sweem(int amount) {
         if (amount > maxSweemDistance) {
             System.out.println(this.name + " " + "утонул.");
-        } else if (amount <= 0) {
-            System.out.println(this.name + " " + "не умеет плавать");
-
         } else System.out.println(this.name + " " + "проплыл:" + " " + amount + " метров");
     }
 
