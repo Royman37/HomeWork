@@ -1,10 +1,17 @@
 package main.geometricFigures;
 
 public interface FigureInterface {
-    double areaCalculator();
+    double areaCalculatorCircle();
 
-    double perimeterCalculator();
+    double perimeterCalculatorCircle();
 
-    void info();
+    double areaCalculatorRectangle();
+
+    double perimeterCalculatorRectangle();
+    double areaCalculatorTriangle();
+
+    double perimeterCalculatorTriangle();
+
+    void info(String figure);
 
 }

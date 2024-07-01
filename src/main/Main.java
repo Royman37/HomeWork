@@ -6,9 +6,7 @@ import main.animals.AnimalAbstractClass;
 import main.animals.animalSpecies.Cat;
 import main.animals.animalSpecies.Dog;
 import main.animals.bowl.BowlWithFood;
-import main.geometricFigures.figures.Circle;
-import main.geometricFigures.figures.Rectangle;
-import main.geometricFigures.figures.Triangle;
+import main.geometricFigures.figures.Figures;
 
 public class Main {
     //класс сканер для ввода при добавлении нужного кол-ва еды.
@@ -65,11 +63,20 @@ public class Main {
         bowl.info();
 
         System.out.println("\nTask2: ");
-        Rectangle rec = new Rectangle("Rectangle", "Green", "Blue", 10, 5);
-        Triangle tri = new Triangle("Triangle", "Red", "Purple", 5, 5, 5);
-        Circle circ = new Circle("Circle", "Yellow", "Orange", 5);
-        rec.info();
-        tri.info();
-        circ.info();
+
+        Figures circle = new Figures("Circle", "Yellow", "Orange", 10);
+        Figures triangle = new Figures("Triangle", "Red", "Blue", 10, 10, 9);
+        Figures rectangle = new Figures("Rectangle", "Black", "Green", 10, 10);
+        circle.areaCalculatorCircle();
+        circle.perimeterCalculatorCircle();
+        circle.info("Circle");
+
+        triangle.areaCalculatorTriangle();
+        triangle.perimeterCalculatorTriangle();
+        triangle.info("Triangle");
+
+        rectangle.areaCalculatorRectangle();
+        rectangle.perimeterCalculatorRectangle();
+        rectangle.info("Rectangle");
     }
 }
