@@ -7,10 +7,12 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class FactorialTest {
     private Factorial math;
+
     @BeforeEach
     void setUp() {
         math = new Factorial();
     }
+
     @org.junit.jupiter.api.Test
     public void factorialСalculation() {
         assertTrue(math.factorialСalculation(0) == 1);
