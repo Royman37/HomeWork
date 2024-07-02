@@ -1,4 +1,5 @@
-/*
+
+import org.junit.Test;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 
@@ -10,10 +11,6 @@ public class FactorialTest {
     void setUp() {
         math = new Factorial();
     }
-    @AfterEach
-    public void tearDown() {
-        math = null;
-    }
     @org.junit.jupiter.api.Test
     public void factorialСalculation() {
         assertTrue(math.factorialСalculation(0) == 1);
@@ -21,4 +18,3 @@ public class FactorialTest {
         assertTrue(math.factorialСalculation(5) == 120);
     }
 }
- */
