@@ -1,22 +1,31 @@
 
-import org.junit.Test;
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
+import org.junit.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 public class FactorialTest {
     private Factorial math;
 
-    @BeforeEach
-    void setUp() {
+    @Before
+    public void setUp() {
         math = new Factorial();
     }
 
-    @org.junit.jupiter.api.Test
-    public void factorialСalculation() {
+    /*
+    Тест на факториал числа 5
+     */
+    @Test
+    public void factorialСalculation() throws Exception {
         assertTrue(math.factorialСalculation(0) == 1);
         assertTrue(math.factorialСalculation(1) == 1);
         assertTrue(math.factorialСalculation(5) == 120);
+    }
+
+    /*
+    Тест на исключение, если число < 0
+     */
+    @Test(expected = IllegalArgumentException.class)
+    public void factorialNegative() {
+        math.factorialСalculation(-1);
     }
 }
