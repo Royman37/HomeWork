@@ -1,11 +1,9 @@
 package main;
 
-import java.util.Scanner;
 
 import main.animals.AnimalAbstractClass;
 import main.animals.animalSpecies.Cat;
 import main.animals.animalSpecies.Dog;
-import main.animals.bowl.BowlWithFood;
 import main.geometricFigures.figures.Figures;
 
 public class Main {
