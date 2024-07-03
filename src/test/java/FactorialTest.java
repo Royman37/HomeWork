@@ -8,7 +8,6 @@ public class FactorialTest {
     /*
     Before всегда запускает до тестов.(создаёт ссылку на объект)
      */
-
     @BeforeClass
     public void setUp() {
         f = new Factorial();
