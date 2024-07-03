@@ -5,12 +5,20 @@ import static org.testng.Assert.*;
 
 public class FactorialTest {
     private Factorial f;
+    /*
+    Before всегда запускает до тестов.(создаёт ссылку на объект)
+     */
 
     @BeforeClass
     public void setUp() {
         f = new Factorial();
     }
 
+    /*
+    Решил реализовать немного по другому тесты.
+    Создал два теста на исключения отрицательного числа и нуля.
+    (Не уверен в корректной работе в одном тесте. Решил на каждое исключение по тесту.)
+     */
     @Test(priority = 1)
     public void factorialСalculation() {
         assertEquals(f.factorialСalculation(1), 1);
