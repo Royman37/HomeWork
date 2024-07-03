@@ -8,7 +8,7 @@ public class FactorialTest {
     private Factorial math;
 
     @Before
-     public void setUp() {
+    public void setUp() {
         math = new Factorial();
     }
 
@@ -17,8 +17,7 @@ public class FactorialTest {
      */
 
     @Test
-    public void factorialСalculation() throws Exception {
-        assertTrue(math.factorialСalculation(0) == 1);
+    public void factorialСalculation() {
         assertTrue(math.factorialСalculation(1) == 1);
         assertTrue(math.factorialСalculation(5) == 120);
     }
@@ -30,8 +29,12 @@ public class FactorialTest {
     public void factorialNegative() {
         math.factorialСalculation(-1);
     }
-    }
 
+    @Test(expected = IllegalArgumentException.class)
+    public void factorialNull() {
+        assertTrue(math.factorialСalculation(0) == 0);
+    }
+}
 
 
 
