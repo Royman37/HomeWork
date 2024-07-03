@@ -1,8 +1,6 @@
-
-import org.junit.*;
-
 import static org.junit.jupiter.api.Assertions.*;
 
+import org.junit.*;
 
 public class FactorialTest {
     private Factorial math;
@@ -15,7 +13,6 @@ public class FactorialTest {
     /*
     Тест на факториал числа 5
      */
-
     @Test
     public void factorialСalculation() {
         assertTrue(math.factorialСalculation(1) == 1);
@@ -32,7 +29,7 @@ public class FactorialTest {
 
     @Test(expected = IllegalArgumentException.class)
     public void factorialNull() {
-        assertTrue(math.factorialСalculation(0) == 0);
+        math.factorialСalculation(0);
     }
 }
 
