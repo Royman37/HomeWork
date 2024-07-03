@@ -20,7 +20,7 @@ public class FactorialTest {
     }
 
     /*
-    Тест на исключение, если число < 0
+    Тесты на исключение, если число <= 0
      */
     @Test(expected = IllegalArgumentException.class)
     public void factorialNegative() {
