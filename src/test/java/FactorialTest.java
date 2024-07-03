@@ -25,7 +25,6 @@ public class FactorialTest {
     @Test(expected = IllegalArgumentException.class)
     public void factorialNegative() {
         math.factorialСalculation(-1);
-
     }
 
     @Test(expected = IllegalArgumentException.class)
