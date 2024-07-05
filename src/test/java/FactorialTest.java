@@ -1,11 +1,13 @@
 import static org.junit.jupiter.api.Assertions.*;
 
-import org.junit.*;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.*;
+
 
 public class FactorialTest {
     private Factorial math;
 
-    @Before
+    @BeforeEach
     public void setUp() {
         math = new Factorial();
     }
@@ -22,14 +24,18 @@ public class FactorialTest {
     /*
     Тесты на исключение, если число <= 0
      */
-    @Test(expected = IllegalArgumentException.class)
+    @Test
     public void factorialNegative() {
-        math.factorialСalculation(-1);
+        assertThrows(IllegalArgumentException.class, () -> {
+            math.factorialСalculation(-1);
+        });
     }
 
-    @Test(expected = IllegalArgumentException.class)
+    @Test
     public void factorialNull() {
-        math.factorialСalculation(0);
+        assertThrows(IllegalArgumentException.class, () -> {
+            math.factorialСalculation(0);
+        });
     }
 }
 
