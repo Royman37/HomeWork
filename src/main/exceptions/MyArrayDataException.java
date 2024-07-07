@@ -1,13 +1,10 @@
 package main.exceptions;
 
-public class MyArrayDataException extends Exception {
+public class MyArrayDataException extends CustomException {
     /*
     Принимает 2 значения(наши i, j из массива, чтобы знать, в какой ячейке ошибка)
      */
-    public int num1, num2;
-
     public MyArrayDataException(int num1, int num2) {
-        this.num1 = num1;
-        this.num2 = num2;
+        super(String.format("Неверный тип данных в ячейке: " + num1 + "x" + num2));
     }
 }

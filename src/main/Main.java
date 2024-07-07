@@ -1,23 +1,20 @@
 package main;
 
-import main.exceptions.MyArrayDataException;
-import main.exceptions.MyArraySizeException;
+import main.exceptions.CustomException;
 
 public class Main {
     public static void main(String[] args) {
-        /*
-        Создал 2 кастомных исключения MyArraySizeException и MyArrayDataException
-         */
         MyArray array = new MyArray();
+        String[][] arrays = {
+                {"1", "2", "3", "1"},
+                {"132", "6", "0", "4"},
+                {"3", "57", "7", "2"},
+                {"10", "3333", "7hello", "4"},
+        };
         try {
-            try {
-                array.initialisationArray(array.getArray());
-            } catch (MyArraySizeException e) {
-                System.out.println(e.getMessage());
-            }
-        } catch (MyArrayDataException e) {
-            System.out.println("Неверный тип данных!");
-            System.out.println("Ячейка: " + e.num1 + "x" + e.num2);
+            System.out.println("\nСумма чисел массива: " + array.initialisationArray(arrays));
+        } catch (CustomException e) {
+            System.out.println(e.getMessage());
         }
     }
 }

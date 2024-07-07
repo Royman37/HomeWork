@@ -3,46 +3,24 @@ package main;
 import main.exceptions.MyArrayDataException;
 import main.exceptions.MyArraySizeException;
 
-public class MyArray {
-    private int parce;
-    private int sum;
-    private String[][] array = new String[4][4];
+import java.util.Arrays;
 
-    /*
-    Заполнил массив с помощью цикла for, второй цикл перебирает и преобразовывает тип String в int
-     */
-    public void initialisationArray(String[][] array) throws MyArraySizeException, MyArrayDataException {
-        if (array.length != 4 || array[0].length != 4) {
-            throw new MyArraySizeException("Неверный размер массива!");
-        }
-        System.out.println("Task1: Массив типа String");
+public class MyArray {
+    private int sum;
+
+    public int initialisationArray(String[][] array) throws MyArraySizeException, MyArrayDataException {
+        if (array.length != 4) throw new MyArraySizeException();
         for (int i = 0; i < array.length; i++) {
-            System.out.println();
-            for (int j = 0; j < array[i].length; j++) { //присвоил 2 значения для наглядности работы исключения. (ячейка 0x0, 0x1)
-                if(array[0][j] == array[i][0]) {
-                    array[i][j] = "0";
-                } else array[i][j] = "1";
-                System.out.print(array[i][j] + " ");
-            }
-        }
-        System.out.println();
-        System.out.println("\nTask2: Преобразованный массив в int");
-        for (int i = 0; i < array.length; i++) {
-            System.out.println();
+            System.out.println(Arrays.deepToString(array[i]));
+            if (array[i].length != 4) throw new MyArraySizeException();
             for (int j = 0; j < array[i].length; j++) {
                 try {
-                    parce = Integer.parseInt(array[i][j]);
+                    sum += Integer.parseInt(array[i][j]);
                 } catch (NumberFormatException e) {
                     throw new MyArrayDataException(i, j);
                 }
-                System.out.print(parce + " ");
-                sum += parce;
             }
         }
-        System.out.println("\nСумма всех чисел: " + sum);
-    }
-
-    public String[][] getArray() {
-        return array;
+        return sum;
     }
 }
