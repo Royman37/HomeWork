@@ -1,0 +1,30 @@
+Index: src/main/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package main;\r\n\r\nimport main.exceptions.MyArrayDataException;\r\nimport main.exceptions.MyArraySizeException;\r\n\r\npublic class Main {\r\n    public static void main(String[] args) {\r\n        /*\r\n        Создал 2 кастомных исключения MyArraySizeException и MyArrayDataException\r\n         */\r\n        MyArray array = new MyArray();\r\n        try {\r\n            try {\r\n                array.initialisationArray(array.getArray());\r\n            } catch (MyArraySizeException e) {\r\n                System.out.println(e.getMessage());\r\n            }\r\n        } catch (MyArrayDataException e) {\r\n            System.out.println(\"Неверный тип данных!\");\r\n            System.out.println(\"Ячейка: \" + e.num1 + \"x\" + e.num2);\r\n        }\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/Main.java b/src/main/Main.java
+--- a/src/main/Main.java	
++++ b/src/main/Main.java	
+@@ -1,5 +1,3 @@
+-package main;
+-
+ import main.exceptions.MyArrayDataException;
+ import main.exceptions.MyArraySizeException;
+ 
+Index: src/main/MyArray.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package main;\r\n\r\nimport main.exceptions.MyArrayDataException;\r\nimport main.exceptions.MyArraySizeException;\r\n\r\npublic class MyArray {\r\n    private int parce;\r\n    private int sum;\r\n    private String[][] array = new String[4][4];\r\n\r\n    /*\r\n    Заполнил массив с помощью цикла for, второй цикл перебирает и преобразовывает тип String в int\r\n     */\r\n    public void initialisationArray(String[][] array) throws MyArraySizeException, MyArrayDataException {\r\n        if (array.length != 4 || array[0].length != 4) {\r\n            throw new MyArraySizeException(\"Неверный размер массива!\");\r\n        }\r\n        System.out.println(\"Task1: Массив типа String\");\r\n        for (int i = 0; i < array.length; i++) {\r\n            System.out.println();\r\n            for (int j = 0; j < array[i].length; j++) { //присвоил 2 значения для наглядности работы исключения. (ячейка 0x0, 0x1)\r\n                if(array[0][j] == array[i][0]) {\r\n                    array[i][j] = \"0\";\r\n                } else array[i][j] = \"1\";\r\n                System.out.print(array[i][j] + \" \");\r\n            }\r\n        }\r\n        System.out.println();\r\n        System.out.println(\"\\nTask2: Преобразованный массив в int\");\r\n        for (int i = 0; i < array.length; i++) {\r\n            System.out.println();\r\n            for (int j = 0; j < array[i].length; j++) {\r\n                try {\r\n                    parce = Integer.parseInt(array[i][j]);\r\n                } catch (NumberFormatException e) {\r\n                    throw new MyArrayDataException(i, j);\r\n                }\r\n                System.out.print(parce + \" \");\r\n                sum += parce;\r\n            }\r\n        }\r\n        System.out.println(\"\\nСумма всех чисел: \" + sum);\r\n    }\r\n\r\n    public String[][] getArray() {\r\n        return array;\r\n    }\r\n}\r\n
+===================================================================
+diff --git a/src/main/MyArray.java b/src/main/MyArray.java
+--- a/src/main/MyArray.java	
++++ b/src/main/MyArray.java	
+@@ -1,5 +1,3 @@
+-package main;
+-
+ import main.exceptions.MyArrayDataException;
+ import main.exceptions.MyArraySizeException;
+ 

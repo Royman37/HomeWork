@@ -1,0 +1,46 @@
+Index: src/main/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package main;\r\n\r\nimport main.exceptions.CustomException;\r\n\r\npublic class Main {\r\n    public static void main(String[] args) {\r\n        MyArray array = new MyArray();\r\n        String[][] arrays = {\r\n                {\"1\", \"2\", \"3\", \"1\"},\r\n                {\"132\", \"6\", \"0\", \"4\"},\r\n                {\"3\", \"57\", \"7\", \"2\"},\r\n                {\"10\", \"3333\", \"7hello\", \"4\"},\r\n        };\r\n        try {\r\n            System.out.println(\"\\nСумма чисел массива: \" + array.initialisationArray(arrays));\r\n        } catch (CustomException e) {\r\n            System.out.println(e.getMessage());\r\n        }\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/Main.java b/src/main/Main.java
+--- a/src/main/Main.java	
++++ b/src/main/Main.java	
+@@ -2,6 +2,8 @@
+ 
+ import main.exceptions.CustomException;
+ 
++import java.util.Arrays;
++
+ public class Main {
+     public static void main(String[] args) {
+         MyArray array = new MyArray();
+@@ -9,7 +11,7 @@
+                 {"1", "2", "3", "1"},
+                 {"132", "6", "0", "4"},
+                 {"3", "57", "7", "2"},
+-                {"10", "3333", "7hello", "4"},
++                {"10", "3333", "7", "4s"},
+         };
+         try {
+             System.out.println("\nСумма чисел массива: " + array.initialisationArray(arrays));
+Index: .idea/compiler.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"CompilerConfiguration\">\r\n    <annotationProcessing>\r\n      <profile name=\"Maven default annotation processors profile\" enabled=\"true\">\r\n        <sourceOutputDir name=\"target/generated-sources/annotations\" />\r\n        <sourceTestOutputDir name=\"target/generated-test-sources/test-annotations\" />\r\n        <outputRelativeToContentRoot value=\"true\" />\r\n        <module name=\"HomeWork\" />\r\n      </profile>\r\n    </annotationProcessing>\r\n  </component>\r\n</project>
+===================================================================
+diff --git a/.idea/compiler.xml b/.idea/compiler.xml
+--- a/.idea/compiler.xml	
++++ b/.idea/compiler.xml	
+@@ -9,5 +9,8 @@
+         <module name="HomeWork" />
+       </profile>
+     </annotationProcessing>
++    <bytecodeTargetLevel>
++      <module name="HomeWork" target="11" />
++    </bytecodeTargetLevel>
+   </component>
+ </project>
+\ No newline at end of file
