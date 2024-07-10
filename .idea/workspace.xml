@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="695c319a-f8eb-4a76-ad10-dc0c630797aa" name="Changes" comment="Lesson_8 corrected.">
-      <change beforePath="$PROJECT_DIR$/HomeWork.iml" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWork.iml" afterDir="false" />
+    <list default="true" id="695c319a-f8eb-4a76-ad10-dc0c630797aa" name="Changes" comment="Lesson_9.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,37 +49,50 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.main.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.main.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.FactorialTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.FactorialTest.factorialСalculation.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.HomeWork [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.HomeWork [test].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Lesson__9&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/romak/IdeaProjects/HomeWork&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Application.Main.executor": "Run",
+    "Application.main.Main.executor": "Run",
+    "Application.main.executor": "Run",
+    "JUnit.FactorialTest.executor": "Run",
+    "JUnit.FactorialTest.factorialСalculation.executor": "Run",
+    "Maven.HomeWork [clean].executor": "Run",
+    "Maven.HomeWork [org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean].executor": "Run",
+    "Maven.HomeWork [org.apache.maven.plugins:maven-clean-plugin:3.2.0:help].executor": "Run",
+    "Maven.HomeWork [org.apache.maven.plugins:maven-compiler-plugin:2.0.2:compile].executor": "Run",
+    "Maven.HomeWork [package].executor": "Run",
+    "Maven.HomeWork [test].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "Lesson__9",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/romak/IdeaProjects/HomeWork",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Application.main">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="main" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="corretto-11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="Main" />
+      <option name="MAIN_CLASS_NAME" value="main.Main" />
+      <module name="HomeWork" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="main.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="corretto-11" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="main.Main" />
       <module name="HomeWork" />
       <extension name="coverage">
         <pattern>
@@ -87,13 +100,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="main" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="main.Main" />
-      <module name="HomeWork" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -140,7 +146,7 @@
     </configuration>
     <list>
       <item itemvalue="Application.main" />
-      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.main.Main" />
       <item itemvalue="JUnit.FactorialTest.factorialNegative" />
       <item itemvalue="JUnit.FactorialTest.factorialСalculation" />
       <item itemvalue="JUnit.FactorialTest" />
@@ -148,7 +154,7 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.main.Main" />
         <item itemvalue="TestNG.FactorialTest" />
         <item itemvalue="JUnit.FactorialTest.factorialСalculation" />
         <item itemvalue="JUnit.FactorialTest.factorialNegative" />
@@ -180,6 +186,9 @@
       <workItem from="1720357015638" duration="983000" />
       <workItem from="1720587856023" duration="40000" />
       <workItem from="1720587901341" duration="50000" />
+      <workItem from="1720587958407" duration="212000" />
+      <workItem from="1720588179811" duration="128000" />
+      <workItem from="1720588314297" duration="176000" />
     </task>
     <task id="LOCAL-00001" summary="Lesson_10_junit add.">
       <option name="closed" value="true" />
@@ -213,7 +222,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720352816022</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Lesson_9.">
+      <option name="closed" value="true" />
+      <created>1720588118767</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1720588118767</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -224,6 +241,7 @@
     <MESSAGE value="Lesson_10_junit add." />
     <MESSAGE value="Lesson_10_junit created." />
     <MESSAGE value="Lesson_8 corrected." />
-    <option name="LAST_COMMIT_MESSAGE" value="Lesson_8 corrected." />
+    <MESSAGE value="Lesson_9." />
+    <option name="LAST_COMMIT_MESSAGE" value="Lesson_9." />
   </component>
 </project>
