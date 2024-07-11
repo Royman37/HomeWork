@@ -1,26 +1,31 @@
 package main;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.security.Key;
+import java.util.*;
 
 public class PhoneBook {
+    Map<String, List<String>> list = new HashMap<>();
     /*
-    Используем HasMap для создания хэш - карточки.
-    С помощью <Ключ, значение> находим нужный номер.
+    Используем Map для создания хэш - карточки.
      */
-    public void lookingForANumber() {
-        System.out.println("Task2: \n");
 
-        HashMap<String, String> list =new HashMap<>();
-        list.put("Roma", "+375 44 224 65 82");
-        list.put("Grisha", "+375 44 221 33 82");
-        list.put("Petya", "+375 29 233 26 11");
-        list.put("Sam", "+375 29 126 72 11");
-        list.put("John", "+375 44 221 26 00");
-        list.put("John", "+375 44 221 26 00");
-        list.get("John");
-
+    public void addingАUser(String name, String number) {
+        if (list.containsKey(name)) {
+            list.get(name).add(number);
+        } else {
+            List<String> phoneNumbers = new ArrayList<>();// создали для номеров телефона, чтобы они хранились отдельно.
+            phoneNumbers.add(number);
+            list.put(name, phoneNumbers);
         }
     }
+
+    public void gettingUser(String name) {
+        System.out.println("Name: " + name + " " + "\nNumber: " + list.getOrDefault(name, new ArrayList<>()));
+    }
+
+    @Override
+    public String toString() {
+        return "PhoneBook: " + list.toString();
+    }
+}
+

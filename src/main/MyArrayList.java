@@ -7,7 +7,7 @@ public class MyArrayList {
         /*
         Создаём массив типа String и добавляем туда слова.
          */
-        ArrayList<String> people = new ArrayList<String>();
+        ArrayList<String> people = new ArrayList<>();
         people.add("Roma");
         people.add("James");
         people.add("John");
@@ -22,7 +22,7 @@ public class MyArrayList {
         /*
         С помощью Set отбираем уникальные элементы.
          */
-        Set<String> set = new LinkedHashSet<String>(people);
+        Set<String> set = new LinkedHashSet<>(people);
         System.out.println("Начальный список: " + people);
         System.out.println("Уникальные элементы из списка: " + set);
 
@@ -32,7 +32,7 @@ public class MyArrayList {
 
          */
         for (String key : set) {
-            System.out.println(key + Collections.frequency(people, key));
+            System.out.println(key + ": " + Collections.frequency(people, key));
         }
     }
 }
