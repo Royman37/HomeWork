@@ -1,8 +1,6 @@
 package main;
 
 import java.util.*;
-import java.util.function.Function;
-import java.util.stream.Collectors;
 
 public class MyArrayList {
     public void countWords() {
@@ -30,8 +28,11 @@ public class MyArrayList {
 
         /*
         Подсчитываем каждый элемент, сколько раз он повторяется.
+        Через метод frequency();
+
          */
-        Map<String, Long> countPeople = people.stream().collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
-        countPeople.forEach((k, v) -> System.out.println(k + ": " + v));
+        for (String key : set) {
+            System.out.println(key + Collections.frequency(people, key));
+        }
     }
 }
