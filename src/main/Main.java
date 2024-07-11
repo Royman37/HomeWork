@@ -1,7 +1,5 @@
 package main;
 
-import java.util.Map;
-
 public class Main {
     public static void main(String[] args) {
         MyArrayList array = new MyArrayList();
@@ -14,6 +12,7 @@ public class Main {
         book.addingАUser("Sonya", "+375 44 001 87 00");
         book.addingАUser("Jax", "+375 29 001 22 11");
         book.addingАUser("Jax", "+375 29 001 22 00");
+
         System.out.println("\nTask: 2");
         System.out.println(book.toString());
         book.gettingUser("Sonya");
