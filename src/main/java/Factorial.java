@@ -1,4 +1,5 @@
 
+
 public class Factorial {
     public int factorialСalculation(int n) throws IllegalArgumentException {
         int fact = 1;

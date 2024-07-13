@@ -1,4 +1,5 @@
 
+
 public class Main {
     public static void main(String[] args) throws IllegalArgumentException {
         Factorial factorial = new Factorial();

@@ -14,12 +14,12 @@ public class FactorialTest {
     /*
     Тест на факториал числа 5
      */
+
     @Test
     public void factorialСalculation() {
         assertTrue(math.factorialСalculation(1) == 1);
         assertTrue(math.factorialСalculation(5) == 120);
     }
-
     /*
     Тесты на исключение, если число <= 0
      */
