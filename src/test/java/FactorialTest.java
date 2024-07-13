@@ -5,7 +5,6 @@ import static org.testng.Assert.*;
 
 public class FactorialTest {
     private Factorial f;
-
     /*
     Before всегда запускает до тестов.(создаёт ссылку на объект)
      */
