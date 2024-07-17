@@ -4,14 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="734bef65-9758-48be-bec9-d0797023b1b2" name="Changes" comment="Master.">
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/test/java/MtsFormTest.java" afterDir="false" />
+    <list default="true" id="734bef65-9758-48be-bec9-d0797023b1b2" name="Changes" comment="Lesson_14.">
+      <change afterPath="$PROJECT_DIR$/src/test/java/DutyTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/HomeInternetTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/InstallmentPlanTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HomeWork.iml" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWork.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/test/java/MtsFormTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CommunicationServicesTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,8 +59,33 @@
   "keyToString": {
     "Application.Unnamed.executor": "Run",
     "Application.main.executor": "Run",
+    "JUnit.CommunicationServicesTest.executor": "Run",
+    "JUnit.DutyTest.checkAccountNumber.executor": "Run",
+    "JUnit.DutyTest.checkDuty.executor": "Run",
+    "JUnit.DutyTest.checkInstallmentPlan.executor": "Run",
+    "JUnit.DutyTest.chekEmail.executor": "Run",
+    "JUnit.DutyTest.executor": "Run",
     "JUnit.FactorialTest.executor": "Run",
     "JUnit.FactorialTest.factorialСalculation.executor": "Run",
+    "JUnit.HomeInternetTest.checkHomeInternet.executor": "Run",
+    "JUnit.HomeInternetTest.executor": "Run",
+    "JUnit.InstallmentPlanTest.checkAccountNumber.executor": "Run",
+    "JUnit.InstallmentPlanTest.checkInstallmentPlan.executor": "Run",
+    "JUnit.InstallmentPlanTest.chekAmount.executor": "Run",
+    "JUnit.InstallmentPlanTest.chekEmail.executor": "Run",
+    "JUnit.InstallmentPlanTest.executor": "Run",
+    "JUnit.MtsFormTest.checkCommunicationServices.executor": "Run",
+    "JUnit.MtsFormTest.checkHomeInternet.executor": "Run",
+    "JUnit.MtsFormTest.checkInscriptionAmount.executor": "Run",
+    "JUnit.MtsFormTest.checkInscriptionEmail.executor": "Run",
+    "JUnit.MtsFormTest.checkInscriptionPhoneNumber (1).executor": "Run",
+    "JUnit.MtsFormTest.checkInscriptionPhoneNumber.executor": "Run",
+    "JUnit.MtsFormTest.checkLogos.executor": "Run",
+    "JUnit.MtsFormTest.checkWords.executor": "Run",
+    "JUnit.MtsFormTest.chekAmount.executor": "Run",
+    "JUnit.MtsFormTest.chekEmail.executor": "Run",
+    "JUnit.MtsFormTest.executor": "Run",
+    "JUnit.MtsFormTest.inputDataPositive.executor": "Run",
     "Maven.HomeWork [clean].executor": "Run",
     "Maven.HomeWork [test].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -76,7 +102,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "configurable.group.appearance",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -85,7 +111,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MtsFormTest.checkInscriptionPhoneNumber">
+  <component name="RunManager" selected="JUnit.CommunicationServicesTest">
     <configuration name="main" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="corretto-11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -95,22 +121,48 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FactorialTest.factorialNegative" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CommunicationServicesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="HomeWork" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FactorialTest" />
-      <option name="METHOD_NAME" value="factorialNegative" />
+      <option name="MAIN_CLASS_NAME" value="CommunicationServicesTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DutyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="HomeWork" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="DutyTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DutyTest.chekEmail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="HomeWork" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="DutyTest" />
+      <option name="METHOD_NAME" value="chekEmail" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FactorialTest.factorialСalculation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="HomeInternetTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="HomeWork" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FactorialTest" />
-      <option name="METHOD_NAME" value="factorialСalculation" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="HomeInternetTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InstallmentPlanTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="HomeWork" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="InstallmentPlanTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -121,54 +173,35 @@
       <option name="MAIN_CLASS_NAME" value="MtsFormTest" />
       <option name="METHOD_NAME" value="checkInscriptionPhoneNumber" />
       <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MtsFormTest.checkWords" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="HomeWork" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MtsFormTest" />
-      <option name="METHOD_NAME" value="checkWords" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FactorialTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="HomeWork" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FactorialTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="VM_PARAMETERS" value="-eaC:/Users/romak/.m2/repository" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$$MAVEN_REPOSITORY$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
       <item itemvalue="Application.main" />
-      <item itemvalue="JUnit.MtsFormTest.checkInscriptionPhoneNumber" />
-      <item itemvalue="JUnit.MtsFormTest.checkWords" />
-      <item itemvalue="JUnit.FactorialTest.factorialNegative" />
-      <item itemvalue="JUnit.FactorialTest.factorialСalculation" />
-      <item itemvalue="TestNG.FactorialTest" />
+      <item itemvalue="JUnit.CommunicationServicesTest" />
+      <item itemvalue="JUnit.DutyTest" />
+      <item itemvalue="JUnit.DutyTest.chekEmail" />
+      <item itemvalue="JUnit.HomeInternetTest" />
+      <item itemvalue="JUnit.InstallmentPlanTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MtsFormTest.checkInscriptionPhoneNumber" />
-        <item itemvalue="JUnit.MtsFormTest.checkWords" />
-        <item itemvalue="TestNG.FactorialTest" />
-        <item itemvalue="JUnit.FactorialTest.factorialСalculation" />
-        <item itemvalue="JUnit.FactorialTest.factorialNegative" />
+        <item itemvalue="JUnit.CommunicationServicesTest" />
+        <item itemvalue="JUnit.HomeInternetTest" />
+        <item itemvalue="JUnit.InstallmentPlanTest" />
+        <item itemvalue="JUnit.DutyTest" />
+        <item itemvalue="JUnit.DutyTest.chekEmail" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.17890.1" />
-        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.17890.1" />
+        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
       </set>
     </attachedChunks>
   </component>
@@ -186,6 +219,8 @@
       <workItem from="1720695785135" duration="123000" />
       <workItem from="1720844384759" duration="528000" />
       <workItem from="1720845488117" duration="394000" />
+      <workItem from="1721201022436" duration="1167000" />
+      <workItem from="1721210421619" duration="5852000" />
     </task>
     <task id="LOCAL-00001" summary="Lesson_13.">
       <option name="closed" value="true" />
@@ -203,7 +238,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721199358657</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Lesson_14.">
+      <option name="closed" value="true" />
+      <created>1721199883972</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1721199883972</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -213,6 +256,7 @@
     <MESSAGE value="Lesson_13." />
     <MESSAGE value="Lesson_13 corrected." />
     <MESSAGE value="Master." />
-    <option name="LAST_COMMIT_MESSAGE" value="Master." />
+    <MESSAGE value="Lesson_14." />
+    <option name="LAST_COMMIT_MESSAGE" value="Lesson_14." />
   </component>
 </project>
