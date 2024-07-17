@@ -155,4 +155,5 @@ public class ReplenishmentFormTest {
         String expected = "Введите корректный адрес электронной почты.";
         assertEquals(expected, invalid.getAttribute("innerText"));
     }
+
 }
