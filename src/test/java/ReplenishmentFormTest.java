@@ -10,6 +10,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
 import java.time.Duration;
 
 public class ReplenishmentFormTest {
@@ -47,6 +48,7 @@ public class ReplenishmentFormTest {
         String expectedUrl = "https://www.mts.by/help/poryadok-oplaty-i-bezopasnost-internet-platezhey/";
         assertEquals(actualUrl, expectedUrl, "URL doesn't match");
     }
+
     @Test
     @Description("Check inscription test")
     public void checkWords() {
@@ -75,8 +77,8 @@ public class ReplenishmentFormTest {
         input1.sendKeys("297777777");
         input2.sendKeys("5");
         input3.sendKeys("123@gmail.com");
-        button2.click()
-        ;
+        button2.click();
+
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         WebElement frameElement = wait
                 .until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//iframe[@class='bepaid-iframe']")));
@@ -88,6 +90,7 @@ public class ReplenishmentFormTest {
         String expected = "Оплата: Услуги связи Номер:375297777777";
         assertEquals(expected, actual, " Не верно");
     }
+
     /*
     Реализовать в assert не получилось, решил через if.
     В поле есть валидация на символы и буквы, я их убрал из теста.
@@ -95,7 +98,7 @@ public class ReplenishmentFormTest {
     @ParameterizedTest
     @Description("Check negative test field phone")
     @ValueSource(strings = {"0", "-1", "29"})
-    public void inputDataPhone(String argument){
+    public void inputDataPhone(String argument) {
         WebElement input1 = driver.findElement(By.xpath("//input[@placeholder='Номер телефона']"));
         WebElement input2 = driver.findElement(By.xpath("//input[@placeholder='Сумма']"));
         WebElement input3 = driver.findElement(By.xpath("//input[@placeholder='E-mail для отправки чека']"));
@@ -104,18 +107,16 @@ public class ReplenishmentFormTest {
         input2.sendKeys("5");
         input3.sendKeys("romakor1997@gmail.com");
         button2.click();
-        WebElement invalid = driver.findElement(By.xpath( "//*[@id='pay-connection']/div[1]/p[1]"));
+        WebElement invalid = driver.findElement(By.xpath("//*[@id='pay-connection']/div[1]/p[1]"));
         String expected = "Введите номер телефона";
 
         /*
         Да, если изменить текст 1-го значения, будет приниматься 2-е.
         Но это в рамках названия ошибки, моя цель была не пропустить при неверном заполнении.
          */
-        if(invalid.getAttribute("innerText").equals(expected)){
+        if (invalid.getAttribute("innerText").equals(expected)) {
             assertEquals(expected, invalid.getAttribute("innerText"));
-        }
-        else
-        {
+        } else {
             expected = "Номер телефона указан неверно";
             assertEquals(expected, invalid.getAttribute("innerText"));
         }
@@ -123,7 +124,7 @@ public class ReplenishmentFormTest {
 
     @Test
     @Description("Check negative test field amount")
-    public void inputDataAmount(){
+    public void inputDataAmount() {
         WebElement input1 = driver.findElement(By.xpath("//input[@placeholder='Номер телефона']"));
         WebElement input2 = driver.findElement(By.xpath("//input[@placeholder='Сумма']"));
         WebElement input3 = driver.findElement(By.xpath("//input[@placeholder='E-mail для отправки чека']"));
@@ -133,15 +134,15 @@ public class ReplenishmentFormTest {
         input3.sendKeys("romakor1997@gmail.com");
         button2.click();
 
-        WebElement invalid = driver.findElement(By.xpath( "//*[@id=\"pay-connection\"]/div[2]/p"));
+        WebElement invalid = driver.findElement(By.xpath("//*[@id=\"pay-connection\"]/div[2]/p"));
         String expected = "Введите сумму платежа";
-            assertEquals(expected, invalid.getAttribute("innerText"));
-
+        assertEquals(expected, invalid.getAttribute("innerText"));
     }
+
     @ParameterizedTest
     @Description("Check negative test field email")
     @ValueSource(strings = {"1", "в", "Z", "@"})
-    public void inputDataEmail(String argument){
+    public void inputDataEmail(String argument) {
         WebElement input1 = driver.findElement(By.xpath("//input[@placeholder='Номер телефона']"));
         WebElement input2 = driver.findElement(By.xpath("//input[@placeholder='Сумма']"));
         WebElement input3 = driver.findElement(By.xpath("//input[@placeholder='E-mail для отправки чека']"));
@@ -150,7 +151,7 @@ public class ReplenishmentFormTest {
         input2.sendKeys("400");
         input3.sendKeys(argument);
         button2.click();
-        WebElement invalid = driver.findElement(By.xpath( "//*[@id=\"pay-connection\"]/div[3]/p"));
+        WebElement invalid = driver.findElement(By.xpath("//*[@id=\"pay-connection\"]/div[3]/p"));
         String expected = "Введите корректный адрес электронной почты.";
         assertEquals(expected, invalid.getAttribute("innerText"));
     }
