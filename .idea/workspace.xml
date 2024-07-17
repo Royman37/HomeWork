@@ -4,15 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="734bef65-9758-48be-bec9-d0797023b1b2" name="Changes" comment="Lesson_14.">
-      <change afterPath="$PROJECT_DIR$/src/test/java/DutyTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/HomeInternetTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/InstallmentPlanTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWork.iml" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWork.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/test/java/MtsFormTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CommunicationServicesTest.java" afterDir="false" />
+    <list default="true" id="734bef65-9758-48be-bec9-d0797023b1b2" name="Changes" comment="Lesson_14 create.">
+      <change beforePath="$PROJECT_DIR$/src/test/java/CommunicationServicesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CommunicationServicesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/DutyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DutyTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/HomeInternetTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HomeInternetTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/InstallmentPlanTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/InstallmentPlanTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +56,7 @@
     "Application.Unnamed.executor": "Run",
     "Application.main.executor": "Run",
     "JUnit.CommunicationServicesTest.executor": "Run",
+    "JUnit.CommunicationServicesTest.inputDataPositive.executor": "Run",
     "JUnit.DutyTest.checkAccountNumber.executor": "Run",
     "JUnit.DutyTest.checkDuty.executor": "Run",
     "JUnit.DutyTest.checkInstallmentPlan.executor": "Run",
@@ -111,7 +108,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CommunicationServicesTest">
+  <component name="RunManager" selected="JUnit.CommunicationServicesTest.inputDataPositive">
     <configuration name="main" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="corretto-11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -130,21 +127,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CommunicationServicesTest.inputDataPositive" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="HomeWork" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CommunicationServicesTest" />
+      <option name="METHOD_NAME" value="inputDataPositive" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DutyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="HomeWork" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="DutyTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DutyTest.chekEmail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="HomeWork" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="DutyTest" />
-      <option name="METHOD_NAME" value="chekEmail" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -182,18 +179,18 @@
     <list>
       <item itemvalue="Application.main" />
       <item itemvalue="JUnit.CommunicationServicesTest" />
+      <item itemvalue="JUnit.CommunicationServicesTest.inputDataPositive" />
       <item itemvalue="JUnit.DutyTest" />
-      <item itemvalue="JUnit.DutyTest.chekEmail" />
       <item itemvalue="JUnit.HomeInternetTest" />
       <item itemvalue="JUnit.InstallmentPlanTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CommunicationServicesTest.inputDataPositive" />
         <item itemvalue="JUnit.CommunicationServicesTest" />
         <item itemvalue="JUnit.HomeInternetTest" />
         <item itemvalue="JUnit.InstallmentPlanTest" />
         <item itemvalue="JUnit.DutyTest" />
-        <item itemvalue="JUnit.DutyTest.chekEmail" />
       </list>
     </recent_temporary>
   </component>
@@ -220,7 +217,7 @@
       <workItem from="1720844384759" duration="528000" />
       <workItem from="1720845488117" duration="394000" />
       <workItem from="1721201022436" duration="1167000" />
-      <workItem from="1721210421619" duration="5852000" />
+      <workItem from="1721210421619" duration="6169000" />
     </task>
     <task id="LOCAL-00001" summary="Lesson_13.">
       <option name="closed" value="true" />
@@ -246,7 +243,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721199883972</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Lesson_14 create.">
+      <option name="closed" value="true" />
+      <created>1721216420075</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1721216420075</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -257,6 +262,7 @@
     <MESSAGE value="Lesson_13 corrected." />
     <MESSAGE value="Master." />
     <MESSAGE value="Lesson_14." />
-    <option name="LAST_COMMIT_MESSAGE" value="Lesson_14." />
+    <MESSAGE value="Lesson_14 create." />
+    <option name="LAST_COMMIT_MESSAGE" value="Lesson_14 create." />
   </component>
 </project>

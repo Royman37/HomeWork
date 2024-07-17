@@ -1,12 +1,12 @@
 
 import static org.junit.jupiter.api.Assertions.*;
-
 import jdk.jfr.Description;
 import org.junit.jupiter.api.*;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
-
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 
 public class CommunicationServicesTest {
@@ -75,25 +75,29 @@ public class CommunicationServicesTest {
         assertEquals(expected, actual);
     }
 
-    /*
-    @ParameterizedTest
-    @Description("Check negative test field phone")
-    @ValueSource(strings = {"0", "-1", "29"})
-    public void inputDataPhone(String argument) {
+    @Test
+    @Description("Check button: positive test")
+    public void inputDataPositive() {
         WebElement input1 = driver.findElement(By.xpath("//input[@placeholder='Номер телефона']"));
         WebElement input2 = driver.findElement(By.xpath("//input[@placeholder='Сумма']"));
         WebElement input3 = driver.findElement(By.xpath("//input[@placeholder='E-mail для отправки чека']"));
         WebElement button2 = driver.findElement(By.xpath("//button[text()='Продолжить']"));
-        input1.sendKeys(argument);
+        input1.sendKeys("297777777");
         input2.sendKeys("5");
-        input3.sendKeys("romakor1997@gmail.com");
+        input3.sendKeys("123@gmail.com");
         button2.click();
-        WebElement invalid = driver.findElement(By.xpath("//*[@id='pay-connection']/div[1]/p[1]"));
-        String expected = "Введите номер телефона";
 
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebElement frameElement = wait
+                .until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//iframe[@class='bepaid-iframe']")));
+        driver.switchTo().frame(frameElement);
+        WebElement elementInsideIframe = wait
+                .until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='pay-description__text']/span")));
 
-
+        String actual = elementInsideIframe.getText();
+        String expected = "Оплата: Услуги связи Номер:375297777777";
+        assertEquals(expected, actual, " Не верно");
     }
 
- */
+
 }
