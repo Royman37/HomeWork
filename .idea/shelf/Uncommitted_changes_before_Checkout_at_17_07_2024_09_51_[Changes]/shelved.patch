@@ -1,0 +1,17 @@
+Index: HomeWork.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<module type=\"JAVA_MODULE\" version=\"4\">\r\n  <component name=\"AdditionalModuleElements\">\r\n    <content url=\"file://$MODULE_DIR$\" dumb=\"true\">\r\n      <sourceFolder url=\"file://$MODULE_DIR$/src/main/java\" isTestSource=\"false\" />\r\n      <sourceFolder url=\"file://$MODULE_DIR$/src/test/java\" isTestSource=\"true\" />\r\n    </content>\r\n  </component>\r\n</module>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/HomeWork.iml b/HomeWork.iml
+--- a/HomeWork.iml	(revision ebe1b6eb298a320caf379492b3ddef98f0a8da97)
++++ b/HomeWork.iml	(date 1721197887597)
+@@ -1,5 +1,5 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+-<module type="JAVA_MODULE" version="4">
++<module version="4">
+   <component name="AdditionalModuleElements">
+     <content url="file://$MODULE_DIR$" dumb="true">
+       <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
