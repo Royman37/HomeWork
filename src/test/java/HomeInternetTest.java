@@ -3,7 +3,9 @@ import org.junit.jupiter.api.*;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
+
 import java.time.Duration;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class HomeInternetTest {
@@ -79,6 +81,7 @@ public class HomeInternetTest {
         String expected = "Сумма";
         assertEquals(expected, actual);
     }
+
     @Test
     @Description("Check email")
     public void chekEmail() {
