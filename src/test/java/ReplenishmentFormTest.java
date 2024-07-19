@@ -32,7 +32,7 @@ public class ReplenishmentFormTest {
     @AfterEach
     public void tearDown() throws InterruptedException {
         Thread.sleep(3000);
-        driver.close();
+        driver.quit();
     }
 
     @Test
@@ -55,7 +55,7 @@ public class ReplenishmentFormTest {
         WebElement words = driver.findElement(By.cssSelector(".pay__wrapper h2"));
         Actions action = new Actions(driver);
         action.moveToElement(words).perform();
-        assertEquals("Онлайн пополнение\nбез комиссии", words.getText());
+        assertEquals("Онлайн пополнение\nбез комиссии", words.getText(), "Inscription doesn't match");
     }
 
     @Test
@@ -64,7 +64,7 @@ public class ReplenishmentFormTest {
         WebElement logo = driver.findElement(By.cssSelector(".pay__partners ul"));
         Actions action = new Actions(driver);
         action.moveToElement(logo).perform();
-        assertEquals(driver.findElement(By.cssSelector(".pay__partners ul")), logo);
+        assertEquals(driver.findElement(By.cssSelector(".pay__partners ul")), logo, "Logos not found");
     }
 
     @Test
@@ -88,7 +88,7 @@ public class ReplenishmentFormTest {
 
         String actual = elementInsideIframe.getText();
         String expected = "Оплата: Услуги связи Номер:375297777777";
-        assertEquals(expected, actual, " Не верно");
+        assertEquals(expected, actual, "Not clickable");
     }
 
     /*
@@ -115,10 +115,10 @@ public class ReplenishmentFormTest {
         Но это в рамках названия ошибки, моя цель была не пропустить при неверном заполнении.
          */
         if (invalid.getAttribute("innerText").equals(expected)) {
-            assertEquals(expected, invalid.getAttribute("innerText"));
+            assertEquals(expected, invalid.getAttribute("innerText"), "Filling error");
         } else {
             expected = "Номер телефона указан неверно";
-            assertEquals(expected, invalid.getAttribute("innerText"));
+            assertEquals(expected, invalid.getAttribute("innerText"), "Filling error");
         }
     }
 
@@ -136,7 +136,7 @@ public class ReplenishmentFormTest {
 
         WebElement invalid = driver.findElement(By.xpath("//*[@id=\"pay-connection\"]/div[2]/p"));
         String expected = "Введите сумму платежа";
-        assertEquals(expected, invalid.getAttribute("innerText"));
+        assertEquals(expected, invalid.getAttribute("innerText"), "Error doesn't match");
     }
 
     @ParameterizedTest
@@ -153,6 +153,6 @@ public class ReplenishmentFormTest {
         button2.click();
         WebElement invalid = driver.findElement(By.xpath("//*[@id=\"pay-connection\"]/div[3]/p"));
         String expected = "Введите корректный адрес электронной почты.";
-        assertEquals(expected, invalid.getAttribute("innerText"));
+        assertEquals(expected, invalid.getAttribute("innerText"), "Error doesn't match");
     }
 }
