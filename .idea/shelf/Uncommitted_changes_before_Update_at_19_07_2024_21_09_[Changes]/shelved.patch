@@ -1,0 +1,149 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"734bef65-9758-48be-bec9-d0797023b1b2\" name=\"Changes\" comment=\"Lesson_14 create.\">\r\n      <change beforePath=\"$PROJECT_DIR$/src/test/java/CommunicationServicesTest.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/test/java/CommunicationServicesTest.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/test/java/DutyTest.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/test/java/DutyTest.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/test/java/HomeInternetTest.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/test/java/HomeInternetTest.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/test/java/InstallmentPlanTest.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/test/java/InstallmentPlanTest.java\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"master\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\">{\r\n  &quot;lastFilter&quot;: {\r\n    &quot;state&quot;: &quot;OPEN&quot;,\r\n    &quot;assignee&quot;: &quot;Royman37&quot;\r\n  }\r\n}</component>\r\n  <component name=\"GithubPullRequestsUISettings\">{\r\n  &quot;selectedUrlAndAccountId&quot;: {\r\n    &quot;url&quot;: &quot;https://github.com/Royman37/Lesson_1.git&quot;,\r\n    &quot;accountId&quot;: &quot;3a1c0d47-7782-4705-85a3-38e17ea05513&quot;\r\n  }\r\n}</component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 3\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2j606RR7fpd53GuDLXD0AUDDbBJ\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"Application.Unnamed.executor\": \"Run\",\r\n    \"Application.main.executor\": \"Run\",\r\n    \"JUnit.CommunicationServicesTest.executor\": \"Run\",\r\n    \"JUnit.CommunicationServicesTest.inputDataPositive.executor\": \"Run\",\r\n    \"JUnit.DutyTest.checkAccountNumber.executor\": \"Run\",\r\n    \"JUnit.DutyTest.checkDuty.executor\": \"Run\",\r\n    \"JUnit.DutyTest.checkInstallmentPlan.executor\": \"Run\",\r\n    \"JUnit.DutyTest.chekEmail.executor\": \"Run\",\r\n    \"JUnit.DutyTest.executor\": \"Run\",\r\n    \"JUnit.FactorialTest.executor\": \"Run\",\r\n    \"JUnit.FactorialTest.factorialСalculation.executor\": \"Run\",\r\n    \"JUnit.HomeInternetTest.checkHomeInternet.executor\": \"Run\",\r\n    \"JUnit.HomeInternetTest.executor\": \"Run\",\r\n    \"JUnit.InstallmentPlanTest.checkAccountNumber.executor\": \"Run\",\r\n    \"JUnit.InstallmentPlanTest.checkInstallmentPlan.executor\": \"Run\",\r\n    \"JUnit.InstallmentPlanTest.chekAmount.executor\": \"Run\",\r\n    \"JUnit.InstallmentPlanTest.chekEmail.executor\": \"Run\",\r\n    \"JUnit.InstallmentPlanTest.executor\": \"Run\",\r\n    \"JUnit.MtsFormTest.checkCommunicationServices.executor\": \"Run\",\r\n    \"JUnit.MtsFormTest.checkHomeInternet.executor\": \"Run\",\r\n    \"JUnit.MtsFormTest.checkInscriptionAmount.executor\": \"Run\",\r\n    \"JUnit.MtsFormTest.checkInscriptionEmail.executor\": \"Run\",\r\n    \"JUnit.MtsFormTest.checkInscriptionPhoneNumber (1).executor\": \"Run\",\r\n    \"JUnit.MtsFormTest.checkInscriptionPhoneNumber.executor\": \"Run\",\r\n    \"JUnit.MtsFormTest.checkLogos.executor\": \"Run\",\r\n    \"JUnit.MtsFormTest.checkWords.executor\": \"Run\",\r\n    \"JUnit.MtsFormTest.chekAmount.executor\": \"Run\",\r\n    \"JUnit.MtsFormTest.chekEmail.executor\": \"Run\",\r\n    \"JUnit.MtsFormTest.executor\": \"Run\",\r\n    \"JUnit.MtsFormTest.inputDataPositive.executor\": \"Run\",\r\n    \"Maven.HomeWork [clean].executor\": \"Run\",\r\n    \"Maven.HomeWork [test].executor\": \"Run\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"SHARE_PROJECT_CONFIGURATION_FILES\": \"true\",\r\n    \"TestNG.FactorialTest.executor\": \"Run\",\r\n    \"git-widget-placeholder\": \"Lesson__14\",\r\n    \"ignore.virus.scanning.warn.message\": \"true\",\r\n    \"kotlin-language-version-configured\": \"true\",\r\n    \"last_opened_file_path\": \"C:/Users/romak/IdeaProjects/HomeWork\",\r\n    \"node.js.detected.package.eslint\": \"true\",\r\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\r\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\r\n    \"nodejs_package_manager_path\": \"npm\",\r\n    \"project.structure.last.edited\": \"Modules\",\r\n    \"project.structure.proportion\": \"0.15\",\r\n    \"project.structure.side.proportion\": \"0.2\",\r\n    \"settings.editor.selected.configurable\": \"configurable.group.appearance\",\r\n    \"vue.rearranger.settings.migration\": \"true\"\r\n  }\r\n}]]></component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"MoveClassesOrPackagesDialog.RECENTS_KEY\">\r\n      <recent name=\"\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\" selected=\"JUnit.CommunicationServicesTest.inputDataPositive\">\r\n    <configuration name=\"main\" type=\"Application\" factoryName=\"Application\">\r\n      <option name=\"ALTERNATIVE_JRE_PATH\" value=\"corretto-11\" />\r\n      <option name=\"ALTERNATIVE_JRE_PATH_ENABLED\" value=\"true\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"Main\" />\r\n      <module name=\"HomeWork\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"CommunicationServicesTest\" type=\"JUnit\" factoryName=\"JUnit\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"HomeWork\" />\r\n      <option name=\"PACKAGE_NAME\" value=\"\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"CommunicationServicesTest\" />\r\n      <option name=\"TEST_OBJECT\" value=\"class\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"CommunicationServicesTest.inputDataPositive\" type=\"JUnit\" factoryName=\"JUnit\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"HomeWork\" />\r\n      <option name=\"PACKAGE_NAME\" value=\"\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"CommunicationServicesTest\" />\r\n      <option name=\"METHOD_NAME\" value=\"inputDataPositive\" />\r\n      <option name=\"TEST_OBJECT\" value=\"method\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"DutyTest\" type=\"JUnit\" factoryName=\"JUnit\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"HomeWork\" />\r\n      <option name=\"PACKAGE_NAME\" value=\"\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"DutyTest\" />\r\n      <option name=\"TEST_OBJECT\" value=\"class\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"HomeInternetTest\" type=\"JUnit\" factoryName=\"JUnit\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"HomeWork\" />\r\n      <option name=\"PACKAGE_NAME\" value=\"\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"HomeInternetTest\" />\r\n      <option name=\"TEST_OBJECT\" value=\"class\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"InstallmentPlanTest\" type=\"JUnit\" factoryName=\"JUnit\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"HomeWork\" />\r\n      <option name=\"PACKAGE_NAME\" value=\"\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"InstallmentPlanTest\" />\r\n      <option name=\"TEST_OBJECT\" value=\"class\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"MtsFormTest.checkInscriptionPhoneNumber\" type=\"JUnit\" factoryName=\"JUnit\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"HomeWork\" />\r\n      <option name=\"PACKAGE_NAME\" value=\"\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"MtsFormTest\" />\r\n      <option name=\"METHOD_NAME\" value=\"checkInscriptionPhoneNumber\" />\r\n      <option name=\"TEST_OBJECT\" value=\"method\" />\r\n      <option name=\"VM_PARAMETERS\" value=\"-eaC:/Users/romak/.m2/repository\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$MODULE_WORKING_DIR$$MAVEN_REPOSITORY$\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <list>\r\n      <item itemvalue=\"Application.main\" />\r\n      <item itemvalue=\"JUnit.CommunicationServicesTest\" />\r\n      <item itemvalue=\"JUnit.CommunicationServicesTest.inputDataPositive\" />\r\n      <item itemvalue=\"JUnit.DutyTest\" />\r\n      <item itemvalue=\"JUnit.HomeInternetTest\" />\r\n      <item itemvalue=\"JUnit.InstallmentPlanTest\" />\r\n    </list>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"JUnit.CommunicationServicesTest.inputDataPositive\" />\r\n        <item itemvalue=\"JUnit.CommunicationServicesTest\" />\r\n        <item itemvalue=\"JUnit.HomeInternetTest\" />\r\n        <item itemvalue=\"JUnit.InstallmentPlanTest\" />\r\n        <item itemvalue=\"JUnit.DutyTest\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SharedIndexes\">\r\n    <attachedChunks>\r\n      <set>\r\n        <option value=\"bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240\" />\r\n        <option value=\"bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240\" />\r\n      </set>\r\n    </attachedChunks>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"734bef65-9758-48be-bec9-d0797023b1b2\" name=\"Changes\" comment=\"Lesson_9.\" />\r\n      <created>1720692045042</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1720692045042</updated>\r\n      <workItem from=\"1720692046369\" duration=\"343000\" />\r\n      <workItem from=\"1720692396014\" duration=\"264000\" />\r\n      <workItem from=\"1720692668256\" duration=\"1942000\" />\r\n      <workItem from=\"1720695785135\" duration=\"123000\" />\r\n      <workItem from=\"1720844384759\" duration=\"528000\" />\r\n      <workItem from=\"1720845488117\" duration=\"394000\" />\r\n      <workItem from=\"1721201022436\" duration=\"1167000\" />\r\n      <workItem from=\"1721210421619\" duration=\"6169000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Lesson_13.\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1720844604250</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1720844604250</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Master.\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1721199358657</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1721199358657</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"Lesson_14.\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1721199883972</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1721199883972</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"Lesson_14 create.\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1721216420075</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1721216420075</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"5\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"Lesson_13.\" />\r\n    <MESSAGE value=\"Lesson_13 corrected.\" />\r\n    <MESSAGE value=\"Master.\" />\r\n    <MESSAGE value=\"Lesson_14.\" />\r\n    <MESSAGE value=\"Lesson_14 create.\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Lesson_14 create.\" />\r\n  </component>\r\n</project>
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	
++++ b/.idea/workspace.xml	
+@@ -4,12 +4,7 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="734bef65-9758-48be-bec9-d0797023b1b2" name="Changes" comment="Lesson_14 create.">
+-      <change beforePath="$PROJECT_DIR$/src/test/java/CommunicationServicesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CommunicationServicesTest.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/java/DutyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DutyTest.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/java/HomeInternetTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HomeInternetTest.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/java/InstallmentPlanTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/InstallmentPlanTest.java" afterDir="false" />
+-    </list>
++    <list default="true" id="734bef65-9758-48be-bec9-d0797023b1b2" name="Changes" comment="Lesson_14 created." />
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -25,7 +20,7 @@
+   <component name="Git.Settings">
+     <option name="RECENT_BRANCH_BY_REPOSITORY">
+       <map>
+-        <entry key="$PROJECT_DIR$" value="master" />
++        <entry key="$PROJECT_DIR$" value="Lesson_14" />
+       </map>
+     </option>
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+@@ -51,58 +46,58 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "Application.Unnamed.executor": "Run",
+-    "Application.main.executor": "Run",
+-    "JUnit.CommunicationServicesTest.executor": "Run",
+-    "JUnit.CommunicationServicesTest.inputDataPositive.executor": "Run",
+-    "JUnit.DutyTest.checkAccountNumber.executor": "Run",
+-    "JUnit.DutyTest.checkDuty.executor": "Run",
+-    "JUnit.DutyTest.checkInstallmentPlan.executor": "Run",
+-    "JUnit.DutyTest.chekEmail.executor": "Run",
+-    "JUnit.DutyTest.executor": "Run",
+-    "JUnit.FactorialTest.executor": "Run",
+-    "JUnit.FactorialTest.factorialСalculation.executor": "Run",
+-    "JUnit.HomeInternetTest.checkHomeInternet.executor": "Run",
+-    "JUnit.HomeInternetTest.executor": "Run",
+-    "JUnit.InstallmentPlanTest.checkAccountNumber.executor": "Run",
+-    "JUnit.InstallmentPlanTest.checkInstallmentPlan.executor": "Run",
+-    "JUnit.InstallmentPlanTest.chekAmount.executor": "Run",
+-    "JUnit.InstallmentPlanTest.chekEmail.executor": "Run",
+-    "JUnit.InstallmentPlanTest.executor": "Run",
+-    "JUnit.MtsFormTest.checkCommunicationServices.executor": "Run",
+-    "JUnit.MtsFormTest.checkHomeInternet.executor": "Run",
+-    "JUnit.MtsFormTest.checkInscriptionAmount.executor": "Run",
+-    "JUnit.MtsFormTest.checkInscriptionEmail.executor": "Run",
+-    "JUnit.MtsFormTest.checkInscriptionPhoneNumber (1).executor": "Run",
+-    "JUnit.MtsFormTest.checkInscriptionPhoneNumber.executor": "Run",
+-    "JUnit.MtsFormTest.checkLogos.executor": "Run",
+-    "JUnit.MtsFormTest.checkWords.executor": "Run",
+-    "JUnit.MtsFormTest.chekAmount.executor": "Run",
+-    "JUnit.MtsFormTest.chekEmail.executor": "Run",
+-    "JUnit.MtsFormTest.executor": "Run",
+-    "JUnit.MtsFormTest.inputDataPositive.executor": "Run",
+-    "Maven.HomeWork [clean].executor": "Run",
+-    "Maven.HomeWork [test].executor": "Run",
+-    "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+-    "TestNG.FactorialTest.executor": "Run",
+-    "git-widget-placeholder": "Lesson__14",
+-    "ignore.virus.scanning.warn.message": "true",
+-    "kotlin-language-version-configured": "true",
+-    "last_opened_file_path": "C:/Users/romak/IdeaProjects/HomeWork",
+-    "node.js.detected.package.eslint": "true",
+-    "node.js.selected.package.eslint": "(autodetect)",
+-    "node.js.selected.package.tslint": "(autodetect)",
+-    "nodejs_package_manager_path": "npm",
+-    "project.structure.last.edited": "Modules",
+-    "project.structure.proportion": "0.15",
+-    "project.structure.side.proportion": "0.2",
+-    "settings.editor.selected.configurable": "configurable.group.appearance",
+-    "vue.rearranger.settings.migration": "true"
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;Application.Unnamed.executor&quot;: &quot;Run&quot;,
++    &quot;Application.main.executor&quot;: &quot;Run&quot;,
++    &quot;JUnit.CommunicationServicesTest.executor&quot;: &quot;Run&quot;,
++    &quot;JUnit.CommunicationServicesTest.inputDataPositive.executor&quot;: &quot;Run&quot;,
++    &quot;JUnit.DutyTest.checkAccountNumber.executor&quot;: &quot;Run&quot;,
++    &quot;JUnit.DutyTest.checkDuty.executor&quot;: &quot;Run&quot;,
++    &quot;JUnit.DutyTest.checkInstallmentPlan.executor&quot;: &quot;Run&quot;,
++    &quot;JUnit.DutyTest.chekEmail.executor&quot;: &quot;Run&quot;,
++    &quot;JUnit.DutyTest.executor&quot;: &quot;Run&quot;,
++    &quot;JUnit.FactorialTest.executor&quot;: &quot;Run&quot;,
++    &quot;JUnit.FactorialTest.factorialСalculation.executor&quot;: &quot;Run&quot;,
++    &quot;JUnit.HomeInternetTest.checkHomeInternet.executor&quot;: &quot;Run&quot;,
++    &quot;JUnit.HomeInternetTest.executor&quot;: &quot;Run&quot;,
++    &quot;JUnit.InstallmentPlanTest.checkAccountNumber.executor&quot;: &quot;Run&quot;,
++    &quot;JUnit.InstallmentPlanTest.checkInstallmentPlan.executor&quot;: &quot;Run&quot;,
++    &quot;JUnit.InstallmentPlanTest.chekAmount.executor&quot;: &quot;Run&quot;,
++    &quot;JUnit.InstallmentPlanTest.chekEmail.executor&quot;: &quot;Run&quot;,
++    &quot;JUnit.InstallmentPlanTest.executor&quot;: &quot;Run&quot;,
++    &quot;JUnit.MtsFormTest.checkCommunicationServices.executor&quot;: &quot;Run&quot;,
++    &quot;JUnit.MtsFormTest.checkHomeInternet.executor&quot;: &quot;Run&quot;,
++    &quot;JUnit.MtsFormTest.checkInscriptionAmount.executor&quot;: &quot;Run&quot;,
++    &quot;JUnit.MtsFormTest.checkInscriptionEmail.executor&quot;: &quot;Run&quot;,
++    &quot;JUnit.MtsFormTest.checkInscriptionPhoneNumber (1).executor&quot;: &quot;Run&quot;,
++    &quot;JUnit.MtsFormTest.checkInscriptionPhoneNumber.executor&quot;: &quot;Run&quot;,
++    &quot;JUnit.MtsFormTest.checkLogos.executor&quot;: &quot;Run&quot;,
++    &quot;JUnit.MtsFormTest.checkWords.executor&quot;: &quot;Run&quot;,
++    &quot;JUnit.MtsFormTest.chekAmount.executor&quot;: &quot;Run&quot;,
++    &quot;JUnit.MtsFormTest.chekEmail.executor&quot;: &quot;Run&quot;,
++    &quot;JUnit.MtsFormTest.executor&quot;: &quot;Run&quot;,
++    &quot;JUnit.MtsFormTest.inputDataPositive.executor&quot;: &quot;Run&quot;,
++    &quot;Maven.HomeWork [clean].executor&quot;: &quot;Run&quot;,
++    &quot;Maven.HomeWork [test].executor&quot;: &quot;Run&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
++    &quot;TestNG.FactorialTest.executor&quot;: &quot;Run&quot;,
++    &quot;git-widget-placeholder&quot;: &quot;Lesson__14&quot;,
++    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
++    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
++    &quot;last_opened_file_path&quot;: &quot;C:/Users/romak/IdeaProjects/HomeWork&quot;,
++    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
++    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
++    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
++    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
++    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
++    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
++    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
++    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.appearance&quot;,
++    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+   }
+-}]]></component>
++}</component>
+   <component name="RecentsManager">
+     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+       <recent name="" />
+@@ -178,6 +173,7 @@
+     </configuration>
+     <list>
+       <item itemvalue="Application.main" />
++      <item itemvalue="JUnit.MtsFormTest.checkInscriptionPhoneNumber" />
+       <item itemvalue="JUnit.CommunicationServicesTest" />
+       <item itemvalue="JUnit.CommunicationServicesTest.inputDataPositive" />
+       <item itemvalue="JUnit.DutyTest" />
