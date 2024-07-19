@@ -27,7 +27,7 @@ public class HomeInternetTest {
     @AfterEach
     public void tearDown() throws InterruptedException {
         Thread.sleep(3000);
-        driver.close();
+        driver.quit();
     }
 
     @Test
