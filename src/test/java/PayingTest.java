@@ -1,4 +1,5 @@
 import jdk.jfr.Description;
+import main.ConfProperties;
 import org.junit.jupiter.api.*;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -15,8 +16,8 @@ public class PayingTest {
     @BeforeEach
     public void setUp() {
         driver = new ChromeDriver();
-        System.setProperty("webdriver.chrome.driver", "E:\\Programm\\WebDriverChrome\\chromedriver.exe");
-        driver.get("http://mts.by");
+        System.setProperty("webdriver.chrome.driver", ConfProperties.getProperty("chromedriver"));
+        driver.get(ConfProperties.getProperty("server"));
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
         WebElement button = driver.findElement(By.cssSelector("button#cookie-agree.btn.btn_black.cookie__ok"));
         button.click();
