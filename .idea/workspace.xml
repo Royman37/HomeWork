@@ -5,23 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="734bef65-9758-48be-bec9-d0797023b1b2" name="Changes" comment="Lesson_14 corrected.">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/ConfProperties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/conf.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_07_2024_21_09__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_07_2024_21_09__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_07_2024_21_09__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_07_2024_21_09__Changes_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/page/DutyPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/page/HomeInternetPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/page/InstallmentPlanPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/page/ServicesPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWork.iml" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWork.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/CommunicationServicesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CommunicationServicesTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/DutyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DutyTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/HomeInternetTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HomeInternetTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/InstallmentPlanTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/InstallmentPlanTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PayingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PayingTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/CommunicationServicesTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/CommunicationServicesTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/DutyTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/DutyTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/HomeInternetTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/HomeInternetTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/InstallmentPlanTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/InstallmentPlanTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/PayingTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PayingTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,8 +46,22 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "JUnit.CommunicationServicesTest.checkCommunicationServices.executor": "Run",
+    "JUnit.CommunicationServicesTest.checkPlaceholderAmount.executor": "Run",
+    "JUnit.CommunicationServicesTest.checkPlaceholderEmail.executor": "Run",
     "JUnit.CommunicationServicesTest.checkPlaceholderPhoneNumber.executor": "Run",
     "JUnit.CommunicationServicesTest.executor": "Run",
+    "JUnit.CommunicationServicesTest.listCommunicationServices.executor": "Run",
+    "JUnit.DutyTest.checkAccountNumber.executor": "Run",
+    "JUnit.DutyTest.checkDuty.executor": "Run",
+    "JUnit.DutyTest.chekAmount.executor": "Run",
+    "JUnit.DutyTest.chekEmail.executor": "Run",
+    "JUnit.DutyTest.executor": "Run",
+    "JUnit.HomeInternetTest.checkHomeInternet.executor": "Run",
+    "JUnit.HomeInternetTest.checkSubscriberNumber.executor": "Run",
+    "JUnit.HomeInternetTest.executor": "Run",
+    "JUnit.InstallmentPlanTest.checkAccountNumber.executor": "Run",
+    "JUnit.InstallmentPlanTest.checkInstallmentPlan.executor": "Run",
+    "JUnit.InstallmentPlanTest.executor": "Run",
     "JUnit.PayingTest.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -80,7 +90,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CommunicationServicesTest.checkCommunicationServices">
+  <component name="RunManager" selected="JUnit.CommunicationServicesTest">
     <configuration name="CommunicationServicesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="HomeWork" />
       <option name="PACKAGE_NAME" value="" />
@@ -90,30 +100,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CommunicationServicesTest.checkCommunicationServices" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DutyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="HomeWork" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CommunicationServicesTest" />
-      <option name="METHOD_NAME" value="checkCommunicationServices" />
+      <option name="MAIN_CLASS_NAME" value="DutyTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DutyTest.checkDuty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="HomeWork" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="DutyTest" />
+      <option name="METHOD_NAME" value="checkDuty" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CommunicationServicesTest.checkPlaceholderPhoneNumber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="HomeInternetTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="HomeWork" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CommunicationServicesTest" />
-      <option name="METHOD_NAME" value="checkPlaceholderPhoneNumber" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="HomeInternetTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PayingTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="InstallmentPlanTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="HomeWork" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="PayingTest" />
+      <option name="MAIN_CLASS_NAME" value="InstallmentPlanTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -132,10 +150,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CommunicationServicesTest.checkCommunicationServices" />
-        <item itemvalue="JUnit.CommunicationServicesTest.checkPlaceholderPhoneNumber" />
         <item itemvalue="JUnit.CommunicationServicesTest" />
-        <item itemvalue="JUnit.PayingTest" />
+        <item itemvalue="JUnit.InstallmentPlanTest" />
+        <item itemvalue="JUnit.HomeInternetTest" />
+        <item itemvalue="JUnit.DutyTest" />
+        <item itemvalue="JUnit.DutyTest.checkDuty" />
       </list>
     </recent_temporary>
   </component>
@@ -160,8 +179,18 @@
       <option name="presentableId" value="Default" />
       <updated>1721619319908</updated>
       <workItem from="1721619321388" duration="13706000" />
-      <workItem from="1721634404377" duration="396000" />
+      <workItem from="1721634404377" duration="6061000" />
+      <workItem from="1721750867335" duration="11570000" />
     </task>
+    <task id="LOCAL-00001" summary="Lesson_14 corrected.">
+      <option name="closed" value="true" />
+      <created>1721634876885</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1721634876885</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -169,6 +198,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Lesson_13 corrected." />
-    <option name="LAST_COMMIT_MESSAGE" value="Lesson_13 corrected." />
+    <MESSAGE value="Lesson_14 corrected." />
+    <option name="LAST_COMMIT_MESSAGE" value="Lesson_14 corrected." />
   </component>
 </project>

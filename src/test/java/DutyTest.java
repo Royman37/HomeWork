@@ -3,24 +3,26 @@ import main.ConfProperties;
 import org.junit.jupiter.api.*;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.interactions.Actions;
+import page.DutyPage;
 
 import java.time.Duration;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class DutyTest {
-
     WebDriver driver;
+    public static DutyPage dutyPage;
 
     @BeforeEach
     public void setUp() {
         driver = new ChromeDriver();
         System.setProperty("webdriver.chrome.driver", ConfProperties.getProperty("chromedriver"));
-        driver.get(ConfProperties.getProperty("server"));
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
+        driver.get(ConfProperties.getProperty("services"));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         WebElement button = driver.findElement(By.cssSelector("button#cookie-agree.btn.btn_black.cookie__ok"));
         button.click();
+        dutyPage = new DutyPage(driver);
+
     }
 
     /*
@@ -35,71 +37,39 @@ public class DutyTest {
     @Test
     @Description("Check list duty")
     public void checkDuty() {
-        WebElement button = driver.findElement(By.xpath("//button[@class='select__header']"));
-        Actions action = new Actions(driver);
-        action.moveToElement(button).build().perform();
-        button.click();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-        WebElement element = driver.findElement(By.xpath("//p[text()='Задолженность']"));
-        action.moveToElement(element).build().perform();
-        element.click();
-        String actual = element.getText();
-        String expected = "Задолженность";
-        assertEquals(expected, actual);
+        dutyPage.clickButton();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        assertEquals("Задолженность", dutyPage.clickList());
     }
 
     @Test
     @Description("Check account number")
     public void checkAccountNumber() {
-        WebElement button = driver.findElement(By.xpath("//button[@class='select__header']"));
-        Actions action = new Actions(driver);
-        action.moveToElement(button).build().perform();
-        button.click();
-        WebElement element = driver.findElement(By.xpath("//p[text()='Задолженность']"));
-        action.moveToElement(element).build().perform();
-        element.click();
+        dutyPage.clickButton();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-        WebElement words = driver.findElement(By.xpath("//input[@placeholder='Номер счета на 2073']"));
-        action.moveToElement(words).build().perform();
-        String actual = words.getAttribute("placeholder");
-        String expected = "Номер счета на 2073";
-        assertEquals(expected, actual);
+        dutyPage.choiceList();
+        dutyPage.getWords();
+        assertEquals("Номер счета на 2073", dutyPage.getWords());
     }
 
     @Test
     @Description("Check amount")
     public void chekAmount() {
-        WebElement button = driver.findElement(By.xpath("//button[@class='select__header']"));
-        Actions action = new Actions(driver);
-        action.moveToElement(button).build().perform();
-        button.click();
-        WebElement element = driver.findElement(By.xpath("//p[text()='Задолженность']"));
-        action.moveToElement(element).build().perform();
-        element.click();
+        dutyPage.clickButton();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-        WebElement words = driver.findElement(By.xpath("//input[@placeholder='Сумма']"));
-        action.moveToElement(words).build().perform();
-        String actual = words.getAttribute("placeholder");
-        String expected = "Сумма";
-        assertEquals(expected, actual);
+        dutyPage.choiceList();
+        dutyPage.getAmount();
+        assertEquals("Сумма", dutyPage.getAmount());
     }
 
     @Test
     @Description("Check email")
     public void chekEmail() {
-        WebElement button = driver.findElement(By.xpath("//button[@class='select__header']"));
-        Actions action = new Actions(driver);
-        action.moveToElement(button).build().perform();
-        button.click();
-        WebElement element = driver.findElement(By.xpath("//p[text()='Задолженность']"));
-        action.moveToElement(element).build().perform();
-        element.click();
+        dutyPage.clickButton();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-        WebElement words = driver.findElement(By.xpath("//input[@placeholder='E-mail для отправки чека']"));
-        action.moveToElement(words).build().perform();
-        String actual = words.getAttribute("placeholder");
-        String expected = "E-mail для отправки чека";
-        assertEquals(expected, actual);
+        dutyPage.choiceList();
+        dutyPage.getEmail();
+        assertEquals("E-mail для отправки чека", dutyPage.getEmail());
     }
 }
 
