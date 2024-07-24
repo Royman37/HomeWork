@@ -32,7 +32,6 @@ public class PayingTest {
                 .until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//iframe[@class='bepaid-iframe']")));
         driver.switchTo().frame(frameElement);
     }
-
     /*
     Метод sleep использую, чтобы в конце теста видеть результат.
      */

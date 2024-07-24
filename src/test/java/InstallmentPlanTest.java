@@ -24,7 +24,6 @@ public class InstallmentPlanTest {
         button.click();
         installmentPlanPage = new InstallmentPlanPage(driver);
     }
-
     /*
     Метод sleep использую, чтобы в конце теста видеть результат.
      */

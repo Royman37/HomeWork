@@ -23,7 +23,6 @@ public class HomeInternetTest {
         button.click();
         homeInternetPage = new HomeInternetPage(driver);
     }
-
     /*
     Метод sleep использую, чтобы в конце теста видеть результат.
      */

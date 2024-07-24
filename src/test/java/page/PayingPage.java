@@ -70,7 +70,6 @@ public class PayingPage {
         button.click();
     }
 
-
     public String getPhone() {
         Actions action = new Actions(driver);
         action.moveToElement(phone).build().perform();

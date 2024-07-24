@@ -7,8 +7,6 @@ import org.openqa.selenium.support.*;
 
 import java.time.Duration;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
 public class DutyPage {
     public WebDriver driver;
 

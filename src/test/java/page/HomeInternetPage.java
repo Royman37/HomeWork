@@ -14,7 +14,6 @@ public class HomeInternetPage {
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
-
     @FindBy(xpath = "//input[@placeholder='Сумма']")
     private WebElement amount;
 

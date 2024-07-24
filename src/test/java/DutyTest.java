@@ -24,7 +24,6 @@ public class DutyTest {
         dutyPage = new DutyPage(driver);
 
     }
-
     /*
     Метод sleep использую, чтобы в конце теста видеть результат.
      */
