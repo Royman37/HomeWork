@@ -36,7 +36,6 @@ public class EchoTest {
                 .and()
                 .body("args.foo1", equalTo("bar1"))
                 .body("args.foo2", equalTo("bar2"));
-
     }
 
     @Test
@@ -68,8 +67,7 @@ public class EchoTest {
                 .contentType("application/x-www-form-urlencoded")
                 .config(RestAssured.config().encoderConfig(
                         EncoderConfig.encoderConfig().defaultCharsetForContentType(
-                                StandardCharsets.UTF_8, "application/x-www-form-urlencoded")
-                ))
+                                StandardCharsets.UTF_8, "application/x-www-form-urlencoded")))
                 .formParam("foo1", "bar1")
                 .formParam("foo2", "bar2")
                 .when()
